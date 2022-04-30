@@ -58,7 +58,7 @@ h2 {
 }
 
 .day.square {
-  background-color: steelblue;
+  background-color: rgb(0, 0, 0);
   border: 1px solid white;
 }
 
