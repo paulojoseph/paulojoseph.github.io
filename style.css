@@ -19,7 +19,7 @@ body {
 /* Header */
 h1 {
   margin: 0;
-  background-color: steelblue;
+  background-color: rgb(0, 0, 0);
   line-height: 100px;
   color: khaki;
 }
@@ -58,8 +58,8 @@ h2 {
 }
 
 .day.square {
-  background-color: steelblue;
-  border: 1px solid white;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .task.square {
