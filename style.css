@@ -42,6 +42,7 @@ h2 {
 }
 
 .row {
+  background-color: black;
   min-height: 200px;
   display: flex;
   flex-wrap: wrap;
