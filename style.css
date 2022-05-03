@@ -12,7 +12,7 @@ body {
 
 .tagline {
   font-family: 'Quicksand', sans-serif;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   line-height: 125px;
 }
 
@@ -95,5 +95,5 @@ footer {
 }
 
 #header {
-  background-color: antiquewhite;
+  background-color: rgb(226, 204, 0);
 }
