@@ -12,15 +12,17 @@
       -ms-user-select: none;
           user-select: none;
   font-family: "Lato", sans-serif;
-  background: #131315;
+  background: white;
 }
 
 .canvas {
   position: absolute;
   top: 50%;
   left: 50%;
+/*   width: 280px;
+  height: 430px; */
   width: 280px;
-  height: 430px;
+  height: 280px;
   transform-origin: center center 0px;
   transform: translate(-50%, -50%);
   transform-style: preserve-3d;
@@ -28,9 +30,9 @@
 }
 .canvas .poster {
   position: absolute;
-  top: 0;
+  top: 0px;
   bottom: 0;
-  left: 0;
+  left: -10px;
   right: 0;
   overflow: hidden;
 }
@@ -68,17 +70,17 @@
 .glass {
   position: absolute;
   width: 280px;
-  height: 430px;
+  height: 280px;
   transform: translateZ(3px);
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/258608/room.png");
   background-position: 0px 0px;
-  opacity: 0.01;
+  opacity: 0.05;
 }
 
 .frame-left-inner {
   left: 0;
-  width: 4px;
-  height: 430px;
+  width: 30px;
+  height: 310px;
   transform-origin: left bottom;
   transform: rotateY(-90deg);
   background: #171717;
@@ -86,17 +88,17 @@
 
 .frame-left-surface {
   right: 0;
-  width: 5px;
-  height: 430px;
+  width: 30px;
+  height: 310px;
   transform-origin: right bottom;
   transform: rotateY(90deg);
   background: #242424;
 }
 
 .frame-left-outter {
-  top: -5px;
-  width: 15px;
-  height: 440px;
+  top: -30px;
+  width: 30px;
+  height: 340px;
   transform-origin: left bottom;
   transform: rotateY(90deg);
   background: black;
@@ -104,8 +106,8 @@
 
 .frame-right-inner {
   right: 0;
-  width: 4px;
-  height: 430px;
+  width: 30px;
+  height: 310px;
   transform-origin: right bottom;
   transform: rotateY(90deg);
   background: black;
@@ -113,8 +115,8 @@
 
 .frame-right-surface {
   left: 0;
-  width: 5px;
-  height: 430px;
+  width: 30px;
+  height: 310px;
   transform-origin: left bottom;
   transform: rotateY(-90deg);
   background: #242424;
@@ -122,9 +124,9 @@
 
 .frame-right-outter {
   right: 0;
-  top: -5px;
-  width: 15px;
-  height: 440px;
+  top: -30px;
+  width: 30px;
+  height: 340px;
   transform-origin: right bottom;
   transform: rotateY(-90deg);
   background: #303030;
@@ -132,8 +134,8 @@
 
 .frame-top-inner {
   right: 0;
-  width: 280px;
-  height: 4px;
+  width: 310px;
+  height: 30px;
   transform-origin: right top;
   transform: rotateX(90deg);
   background: black;
@@ -141,17 +143,17 @@
 
 .frame-top-surface {
   bottom: 0;
-  left: -5px;
-  width: 290px;
-  height: 5px;
+  left: 0px;
+  width: 340px;
+  height: 30px;
   transform-origin: right bottom;
   transform: rotateX(-90deg);
   background: #242424;
 }
 
 .frame-top-outter {
-  width: 290px;
-  height: 15px;
+  width: 340px;
+  height: 30px;
   transform-origin: right top;
   transform: rotateX(-90deg);
   background: #3d3d3d;
@@ -160,8 +162,8 @@
 .frame-bottom-inner {
   bottom: 0;
   left: 0;
-  width: 280px;
-  height: 4px;
+  width: 310px;
+  height: 30px;
   transform-origin: right bottom;
   transform: rotateX(-90deg);
   background: #303030;
@@ -169,9 +171,9 @@
 
 .frame-bottom-surface {
   top: 0px;
-  left: -5px;
-  width: 290px;
-  height: 5px;
+  left: 0px;
+  width: 310px;
+  height: 30px;
   transform-origin: right top;
   transform: rotateX(90deg);
   background: #242424;
@@ -179,8 +181,9 @@
 
 .frame-bottom-outter {
   bottom: 0;
-  width: 290px;
-  height: 15px;
+  left: -30px;
+  width: 340px;
+  height: 30px;
   transform-origin: right bottom;
   transform: rotateX(90deg);
   background: black;
