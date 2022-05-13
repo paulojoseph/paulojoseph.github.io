@@ -3,208 +3,279 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-@import url("https://fonts.googleapis.com/css?family=Satisfy");
-* {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2, h3, h4, h5, h6, a, p, span {
-  padding-bottom: 0.714em !important;
-  padding-top: 0.714em !important;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  color: #ffffff;
-  font-weight: bold;
-  text-align: center;
-}
-
-footer {
-  bottom: 0;
+@import url("https://fonts.googleapis.com/css?family=Lato:100");
+.scene {
+  position: absolute;
+  top: 0;
   right: 0;
+  bottom: 0;
   left: 0;
-  margin: 0 auto;
-  position: fixed;
-  width: 100%;
-  background: #252525;
-  text-align: center;
-}
-footer .content {
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: 40px;
-}
-footer .content .bottom {
-  padding: 0;
-  margin: 0;
-  top: 10%;
-}
-footer .content .bottom .beat {
-  color: red;
-  -webkit-animation: beat 0.3s infinite alternate;
-          animation: beat 0.3s infinite alternate;
-}
-footer .content .top {
-  font-size: 25px;
-}
-footer .content .top .fa-twitter:hover {
-  transition: 350ms ease-in-out;
-  color: #55acee;
-  transform: scale(1.4);
-}
-footer .content .top .fa-youtube:hover {
-  transition: 350ms ease-in-out;
-  color: #cd201f;
-  transform: scale(1.4);
-}
-footer .content .top .fa-instagram:hover {
-  transition: 350ms ease-in-out;
-  color: #e4405f;
-  transform: scale(1.4);
-}
-footer .content .top .fa-codepen:hover {
-  transition: 350ms ease-in-out;
-  color: #FFDD40;
-  transform: scale(1.4);
-}
-footer .content .top a {
-  padding: 10px;
-}
-footer .content .top i {
-  transition: 500ms ease-in-out;
-}
-
-body, html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  border: 0;
+  perspective: 1000px;
   overflow: hidden;
-  background: #252525;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-}
-
-.noselect {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  font-family: "Lato", sans-serif;
+  background: white;
 }
 
-@-webkit-keyframes beat {
-  to {
-    transform: scale(1.4);
-  }
-}
-
-@keyframes beat {
-  to {
-    transform: scale(1.4);
-  }
-}
-.artboard .cards {
-  text-align: center;
-  min-height: 100vh;
-  overflow: hidden;
-  display: flex;
-}
-.artboard .cards .card {
-  min-width: calc(20%);
-  min-height: 100%;
-  text-align: center;
-  background-size: content;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  transition: 500ms cubic-bezier(1, 0.02, 0, 0.98);
-  vertical-align: middle;
-}
-.artboard .cards .card a {
-  font-family: "Satisfy", cursive;
-  font-size: 60px;
-  text-transform: capitalize;
-  vertical-align: middle;
-  text-align: center;
-  position: relative;
+.canvas {
+  position: absolute;
   top: 50%;
-  transition: 250ms cubic-bezier(1, 0.02, 0, 0.98);
+  left: 50%;
+/*   width: 280px;
+  height: 430px; */
+  width: 280px;
+  height: 280px;
+  transform-origin: center center 0px;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  background: #28495B;
 }
-.artboard .p1 {
-  background: url("https://i2.wp.com/dreamtheater.club/wp-content/uploads/2015/12/Dream-Theater-Images-and-Words.jpg");
+.canvas .poster {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: -10px;
+  right: 0;
+  overflow: hidden;
 }
-.artboard .p2 {
-  background: url("https://m.media-amazon.com/images/I/71sBmJvcIKL._AC_SL1211_.jpg");
+.canvas .poster-title {
+  position: absolute;
+  width: 100px;
+  left: 25px;
+  bottom: 25px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 40px;
+  line-height: 45px;
 }
-.artboard .p3 {
-  background: url("https://hmrock.com.br/wp-content/uploads/2016/02/cov-divinewings.jpg");
-}
-.artboard .p4 {
-  background: url("https://static.wixstatic.com/media/3655b5_ebaf82a19f584991941ff233a15008df~mv2.jpg");
-}
-.artboard .p5 {
-  background: url("https://images-na.ssl-images-amazon.com/images/I/81MJ05GJTlL.jpg");
+.canvas div {
+  position: absolute;
+  transform-style: preserve-3d;
 }
 
-.open {
-  min-width: 100% !important;
+.title {
+  position: absolute;
+  right: 0;
+  font-weight: 100;
+  font-size: 12px;
+  color: white;
+  transform: translateX(120%);
 }
-.open a {
-  top: 100% !important;
+.title .subtitle {
+  margin-top: 10px;
+  width: 110px;
+  line-height: 17px;
+  font-size: 9px;
+  color: #bebebe;
 }
 
-.close {
-  min-width: 0% !important;
+.glass {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  transform: translateZ(3px);
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/258608/room.png");
+  background-position: 0px 0px;
+  opacity: 0.05;
 }
-.close a {
-  top: -50% !important;
+
+.frame-left-inner {
+  left: 0;
+  width: 30px;
+  height: 310px;
+  transform-origin: left bottom;
+  transform: rotateY(-90deg);
+  background: #171717;
+}
+
+.frame-left-surface {
+  right: 0;
+  width: 30px;
+  height: 310px;
+  transform-origin: right bottom;
+  transform: rotateY(90deg);
+  background: #242424;
+}
+
+.frame-left-outter {
+  top: -30px;
+  width: 30px;
+  height: 340px;
+  transform-origin: left bottom;
+  transform: rotateY(90deg);
+  background: black;
+}
+
+.frame-right-inner {
+  right: 0;
+  width: 30px;
+  height: 310px;
+  transform-origin: right bottom;
+  transform: rotateY(90deg);
+  background: black;
+}
+
+.frame-right-surface {
+  left: 0;
+  width: 30px;
+  height: 310px;
+  transform-origin: left bottom;
+  transform: rotateY(-90deg);
+  background: #242424;
+}
+
+.frame-right-outter {
+  right: 0;
+  top: -30px;
+  width: 30px;
+  height: 340px;
+  transform-origin: right bottom;
+  transform: rotateY(-90deg);
+  background: #303030;
+}
+
+.frame-top-inner {
+  right: 0;
+  width: 310px;
+  height: 30px;
+  transform-origin: right top;
+  transform: rotateX(90deg);
+  background: black;
+}
+
+.frame-top-surface {
+  bottom: 0;
+  left: 0px;
+  width: 340px;
+  height: 30px;
+  transform-origin: right bottom;
+  transform: rotateX(-90deg);
+  background: #242424;
+}
+
+.frame-top-outter {
+  width: 340px;
+  height: 30px;
+  transform-origin: right top;
+  transform: rotateX(-90deg);
+  background: #3d3d3d;
+}
+
+.frame-bottom-inner {
+  bottom: 0;
+  left: 0;
+  width: 310px;
+  height: 30px;
+  transform-origin: right bottom;
+  transform: rotateX(-90deg);
+  background: #303030;
+}
+
+.frame-bottom-surface {
+  top: 0px;
+  left: 0px;
+  width: 310px;
+  height: 30px;
+  transform-origin: right top;
+  transform: rotateX(90deg);
+  background: #242424;
+}
+
+.frame-bottom-outter {
+  bottom: 0;
+  left: -30px;
+  width: 340px;
+  height: 30px;
+  transform-origin: right bottom;
+  transform: rotateX(90deg);
+  background: black;
 }
 </style>
 </head>
   
 <body>
 
-<div class="artboard">
-  <div class="cards">
-    <div class="card p1"><a>Images and Words</a></div>
-    <div class="card p2"><a>Master of Puppets</a></div>
-    <div class="card p3"><a>The Divine Wings of Tragedy</a></div>
-    <div class="card p4"><a>Hatebreeder</a></div>
-    <div class="card p5"><a>Temple of Shadows</a></div>
+
+<div class="scene">
+  <div class="canvas">
+    <div class="poster"><img src='https://upload.wikimedia.org/wikipedia/pt/4/4d/Master_of_Puppets.jpg'/>
+      <div class="poster-title"></div>
+
+    </div>
+    <div class="title">
+      <div class="subtitle"></div>
+    </div>
+    <div class="glass"></div>
+    <div class="frame-left-inner">
+      <div class="frame-left-surface">
+        <div class="frame-left-outter"></div>
+      </div>
+    </div>
+    <div class="frame-right-inner">
+      <div class="frame-right-surface">
+        <div class="frame-right-outter"></div>
+      </div>
+    </div>
+    <div class="frame-top-inner">
+      <div class="frame-top-surface">
+        <div class="frame-top-outter"></div>
+      </div>
+    </div>
+    <div class="frame-bottom-inner">
+      <div class="frame-bottom-surface"> 
+        <div class="frame-bottom-outter"> </div>
+      </div>
+    </div>
   </div>
 </div>
-<footer>
-  <div class="content">
-    <div class="top"><a target="_blank" href="https://www.instagram.com/akshaycodes/?hl=en"><i class="fab fa-instagram"></i></a><a target="_blank" href="https://twitter.com/akshaycodes/"><i class="fab fa-twitter"></i></a><a target="_blank" href="http://akshaycodes.com/youtube"><i class="fab fa-youtube"></i></a><a target="_blank" href="https://codepen.io/akshaycodes/"><i class="fab fa-codepen"></i></a></div>
-    <div class="bottom"><a>made with <i class="fas fa-heart beat"></i> by <a target="_blank" href="https://codepen.io/akshaycodes/">Akshaycodes</a></a></div>
-  </div>
-</footer>
-
 <script>
-//tested on Safari,chrome 
-//No Script
-//total time: 2 hours 
-//You Can Find Me On Instagram: @akshaycodes 
-//if you have questions feel free to ask
-const cards = document.querySelectorAll('.card');
-    function toggleOpen() {
-      this.classList.toggle('open');
-     for (i = 0; i < cards.length; i++) {
-       if ( cards[i] !== this)
-       cards[i].classList.toggle('close')
-     }
-}
- cards.forEach(card => card.addEventListener('click', toggleOpen));
+(function() {
+
+  var scene = document.getElementsByClassName('scene')[0];
+  var canvas = document.getElementsByClassName('canvas')[0];
+  var glass = document.getElementsByClassName('glass')[0];
+
+  try {
+    document.createEvent("TouchEvent");
+    scene.addEventListener('touchmove', onTouchMove);
+  } catch (e) {
+    scene.addEventListener('mousemove', onMouseMove);
+  }
+
+  function onTouchMove(event) {
+    event.preventDefault();
+
+    var x = event.touches[0].pageX;
+    var y = event.touches[0].pageY;
+
+    updateRotation(x, y);
+  }
+
+  function onMouseMove(event) {
+    var x = event.x;
+    var y = event.y;
+
+    updateRotation(x, y);
+  }
+
+  function updateRotation(x, y) {
+    var yAxisRotation = (x - (window.innerWidth / 2)) * (80 / window.innerWidth);
+    var xAxisRotation = (y - (window.innerHeight / 2)) * (-80 / window.innerHeight);
+
+    var transformations = [
+      'translate(-50%, -50%)',
+      'rotateY(' + yAxisRotation + 'deg)',
+      'rotateX(' + xAxisRotation + 'deg)'
+    ];
+
+    glass.style.backgroundPosition = (500 - yAxisRotation * 5 + 'px ') + (xAxisRotation * 5 + 'px');
+    canvas.style.transform = transformations.join(' ');
+  };
+
+})();
 
 </script>
 
