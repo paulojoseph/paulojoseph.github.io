@@ -52,6 +52,8 @@
 }
 
 .poster img {
+  position: relative;
+  left: 30px;
   width: 280px;
   height: 280px;
 }
