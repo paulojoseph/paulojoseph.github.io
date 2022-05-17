@@ -51,6 +51,11 @@
   transform-style: preserve-3d;
 }
 
+.poster img {
+  width: 280px;
+  height: 280px;
+}
+
 .title {
   position: absolute;
   right: 0;
