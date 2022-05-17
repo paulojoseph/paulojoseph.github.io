@@ -4,25 +4,6 @@
   box-sizing: border-box;
 }
 
-.process-row {
-		font-family: 'Oxanium', cursive;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-		justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    background: #28495B;
-    transform-style: preserve-3d;
-    flex: 1 1 calc(50% - 1rem);
-    position: relative;
-}
-
 .scene {
   position: absolute;
   top: 0;
@@ -36,55 +17,63 @@
       -ms-user-select: none;
           user-select: none;
   font-family: "Lato", sans-serif;
-  background: white;
+  background: #F5F5F5;
   display: flex;
   flex-flow: row wrap;  
 
 }
 
 .canvas {
+  position: relative;
+  top: 40%;
+  left: 0;
   width: 180px;
   height: 180px;
-  transform-origin: center center 0px;
-  transform: translate(-50%, -50%);
+/*   transform-origin: center center 0px; */
+/*   transform: translate(0%, 0%); */
   transform-style: preserve-3d;
-  background: #28495B;
+  transition: 500ms;
+  background: black;
   flex: 1 1 calc(50% - 1rem);
-  position: relative;
- 
+/*   position: relative; */
+}
+
+.canvas:hover {
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
 }
 
 .album-1 {
   position: absolute;
-  top: 50%;
-  left: 12%;
+  top: 40%;
+  left: 5%;
 }
 
 .album-2 {
   position: absolute;
-  top: 50%;
-  left: 31%;
+  top: 40%;
+  left: 24%;
 }
 
 .album-3 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 43%;
 }
 
 .album-4 {
   position: absolute;
-  top: 50%;
-  left: 69%;
+  top: 40%;
+  left: 62%;
 }
 
 .album-5 {
   position: absolute;
-  top: 50%;
-  left: 88%;
-}
+  top: 40%;
+  left: 81%;
+} 
 
-.canvas .poster {
+ .canvas .poster {
   position: absolute;
   top: 0px;
   bottom: 0;
@@ -103,7 +92,7 @@
   position: absolute;
   transform-style: preserve-3d;
 }
-/* 
+
 .glass {
   position: absolute;
   width: 180px;
@@ -112,7 +101,7 @@
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/258608/room.png");
   background-position: 0px 0px;
   opacity: 0.05;
-} */
+}
 
 .frame-left-inner {
   left: 0;
@@ -378,7 +367,7 @@
   background: #1C1C1C;
 }
 
-/*   .glass {
+  .glass {
   position: absolute;
   width: 280px;
   height: 280px;
@@ -386,7 +375,7 @@
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/258608/room.png");
   background-position: 0px 0px;
   opacity: 0.05;
-} */
+}
   
 .frame-bottom-outter {
   bottom: 0;
