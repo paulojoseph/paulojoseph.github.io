@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="resources/css/styles.css"> -->
+    <style amp-custom="">
+
+        .team_credentials div.score {
+        
+      }
+  
+      @font-face {
+          font-family: 'proxima-nova-regular';
+          src: url('/fonts/proxima-nova-regular.woff2') format('woff2'),
+          url('/fonts/proxima-nova-regular.woff') format('woff'),
+          url('/fonts/proxima-nova-regular.ttf') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+      }
+  
+      @font-face {
+          font-family: 'proxima-nova-semibold';
+          src: url('/fonts/proxima-nova-semibold.woff2') format('woff2'),
+          url('/fonts/proxima-nova-semibold.woff') format('woff'),
+          url('/fonts/proxima-nova-semibold.ttf') format('truetype');
+          font-weight: 600;
+          font-style: normal;
+          font-display: swap;
+      }
+  
+      @font-face {
+          font-family: 'proxima-nova-bold';
+          src: url('/fonts/proxima-nova-bold.woff2') format('woff2'),
+          url('/fonts/proxima-nova-bold.woff') format('woff'),
+          url('/fonts/proxima-nova-bold.ttf') format('truetype');
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+      }
+  
+      body{
+          color: #fff;
+          font-family: 'proxima-nova-regular', Helvetica, sans-serif;
+      }
+      .sponsor-block amp-img  img {
+          object-fit: fill;
+          -o-object-fit: fill;
+      }
+  
+        /* Bookend*/
+  
+        .bookend-date-container {
+            font-size: 1.0em;
+            font-weight: 500;
+            color: #AAAAAA;
+            text-align: center;
+            margin: 3% 0;
+        }
+  
+        .drawer-container a {
+            text-decoration:none;
+        }
+  
+      .book-team-inner-container {
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+      }
+  
+      .bookend-match-container {
+          height: 120px;
+          border: 2px solid #767676;
+          display: flex;
+          width: 92%;
+          margin: 3% auto;
+      }
+  
+      .bookend-image {
+          /*width: 100%;*/
+      }
+      .bookend-team-name-container {
+          display: flex;
+          height: 32%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          color: white;
+      }
+  
+      .book-team-image-container {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          height: 60px;
+          margin-top: 10px;
+      }
+  
+      amp-img.bookend-image img {
+          object-fit: contain;
+      }
+  
+      .bookend-team-name {
+          font-size: 0.6em;
+          text-transform: uppercase;
+          position: relative;
+          font-weight: 500;
+          top: 10%;
+      }
+  
+      .bookend-team-nickname {
+          font-size: 0.7em;
+          text-transform: uppercase;
+          font-family: 'proxima-nova-semibold', Helvetica, sans-serif;
+      }
+  
+      .bookend-right-svg-container {
+          width:10%;
+          position:relative;
+          direction: rtl;
+      }
+  
+      .bookend-left-svg-container {
+          width:10%;
+          position:relative;
+      }
+  
+      .bookend-arrow {
+          height: 120px;
+      }
+  
+      .drawer-container {
+          padding:0 8% 8%;
+      }
+  
+      .bookend-master-title-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 3%;
+          margin-top: 1%;
+      }
+  
+      .bookend-master-title-image {
+          width: 10%;
+          margin-right: 2%;
+      }
+  
+      .bookend-master-title {
+          font-family: 'proxima-nova-bold', Helvetica, sans-serif;
+          font-size: 1.4em;
+          font-weight: 800;
+          color: #AAAAAA;
+      }
+  
+      .bookend-link {
+          text-decoration:none;
+          font-size: 1.2em;
+          font-weight: 600;
+          color: white;
+          background: #317CE8;
+          border-radius: 5px;
+          padding: 5%;
+      }
+  
+      .bookend-link-container {
+          padding: 5% 0%;
+          display: flex;
+          justify-content: center;
+      }
+  
+      .bookend-team-container {
+          display: flex;
+          width:50%;
+      }
+  
+      .be-story-icon-container {
+          margin-right: 1%;
+          position: relative;
+          height: 1.4em;
+          width: 1.25em;
+      }
+  
+      @media
+      (max-device-width: 800px)
+      and (orientation: portrait) {
+          .bookend-team-nickname {
+              padding-top: 2px;
+              font-size: 0.7em;
+          }
+          .bookend-team-name-container {
+          }
+          .bookend-team-name {
+              font-size: 0.6em;
+          }
+      }
+  
+      /*Cover page*/
+      .team_wrapper amp-img {
+          margin: 0 auto;
+      }
+  
+      .cover-image-wrapper {
+          filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.3));
+      }
+  
+      .top amp-img {
+      
+      }
+  
+      .bottom amp-img {
+      
+      }
+  
+      .team_wrapper amp-img img {
+          object-fit: scale-down;
+      }
+      .game_line_wrapper img{
+          object-fit: scale-down;
+          margin: 0 auto
+      }
+      .story_icon {
+          background: rgb(0 0 0 / 30%);
+      }
+  
+      .darker_fill{
+          filter: drop-shadow(1px 1px 1px rgba(0,0,0,50%)) brightness(80%);
+      }
+  
+      .lighter_fill{
+          filter: saturate(152.5%) brightness(95%);
+      }
+  
+      .arrow_background {
+          margin: auto;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: calc(120 * var(--story-page-vh));
+      }
+  
+      .top{
+          display: flex;
+          justify-content: space-between;
+          margin: -64px 0 0 0;
+      }
+      .bottom{
+          position: absolute;
+          bottom: 80px;
+          right: 20px;
+      }
+      .transparent_background{
+          background: rgba(0, 0, 0, 0.25);
+      }
+      .shadow_text{
+          text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.3);
+      }
+      .game_info_box{
+          display: flex;
+          float: right;
+          clear: both;
+      }
+  
+      .titles_wrapper {
+          font-family: 'proxima-nova-bold', Helvetica, sans-serif;
+      }
+  
+      .titles_wrapper > div{
+          float: right;
+          clear: both;
+          margin-right:5px ;
+      }
+  
+      .titles_wrapper .story_name{
+          font-size: 16px;
+          line-height: 11px;
+          margin-bottom: 5px;
+          padding: 8px;
+          white-space: nowrap;
+      }
+  
+      .titles_wrapper .date{
+          font-size: 13px;
+          line-height: 0;
+          font-size: 15px;
+          padding: 8px;
+      }
+  
+      .game_line_wrapper{
+          display: flex;
+          align-items: center;
+          float: right;
+          clear: both;
+          font-size: 15px;
+          margin-top: 5px;
+          vertical-align: middle;
+          padding: 2px 6px;
+      }
+  
+      .game_line_wrapper amp-img{
+          vertical-align: middle;
+          margin: 0 -7px 0 0;
+      }
+  
+      .team_wrapper{
+          text-align: center;
+      }
+  
+      .team_credentials{
+          text-align: center;
+          text-transform: uppercase;
+          margin-top: 5%;
+      }
+  
+      .team_credentials .city{
+          
+          font-size: 22px;height: 22px;
+          font-family: 'proxima-nova-semibold', Helvetica, sans-serif;
+      }
+  
+      .team_credentials .name{
+          font-family: 'proxima-nova-bold', Helvetica, sans-serif;
+          font-weight: 700;
+          font-size: 30px;
+          white-space: nowrap;
+      }
+  
+      .team_credentials .score{
+          font-size: 29px;
+      }
+  
+      .bottom{
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+      }
+      .sponsor {
+          flex-basis: 29%;
+      }
+  
+      .sponsor-block {
+          flex-basis: 20%;
+          color: #767676;
+          text-align: center;
+      }
+  
+      .sponsor-block p {
+          font-size: 13px;
+      }
+  
+      .sponsor-block p:first-child {
+          font-weight: 700;
+      }
+  
+      .footer{
+          display: flex;
+          justify-content: space-between;
+          padding: 0 20px;
+          position: absolute;
+          bottom:  20px;
+      }
+      .footer .location{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          text-align: right;
+          flex: auto;
+          font-size: 18px;
+      }
+      .footer .sponsor p{
+          font-size: 0.75rem;
+          margin-bottom: 5px;
+          text-align: center;
+      }
+      .footer .location_name{
+          font-family: 'proxima-nova-semibold', Helvetica, sans-serif;
+          font-weight: 500;
+          font-size: 0.8rem;
+      }
+  
+      .footer .location_key {
+          font-size: 0.8rem;
+          font-weight: 300;
+      }
+      .game_details_wrapper{
+          margin: -45px 0 0 0;
+      }
+      @media screen and (min-width:780px) {
+          .sponsor {
+              flex-basis: 30%;
+          }
+  
+          .sponsor-block {
+              flex-basis: 20%;
+          }
+      }
+      @media screen and ( max-width : 400px ) and (max-height: 667px){
+          .arrow_background {
+              margin: calc(-13.5 * var(--story-page-vh)) 0 0 0;
+          }
+          .top {
+              margin: -47px 0 0 0;
+          }
+          .bottom {
+              height: calc(39 * var(--story-page-vh));
+          }
+          .footer{
+              bottom: 14px;
+          }
+      }
+      @media screen and ( max-width : 414px ) and (max-height: 896px) and (min-height: 800px){
+          .arrow_background {
+              margin: calc(-12 * var(--story-page-vh)) 0 0 0;
+          }
+          .top {
+              margin: -52px 0 0 0;
+          }
+          .bottom {
+              height: calc(50 * var(--story-page-vh));
+          }
+  
+          .bookend-master-title {
+              font-size: 1.2em;
+          }
+      }
+  
+      @media screen and ( max-width : 360px ) and (max-height: 740px){
+          .arrow_background {
+              margin: calc(-11 * var(--story-page-vh)) 0 0 0;
+          }
+          .top {
+              margin: -40px 0 0 0;
+          }
+          .bottom {
+              height: calc(43 * var(--story-page-vh));
+          }
+      }
+  
+      @media screen and ( max-width : 412px ) and (max-height: 920px) and (min-height: 900px){
+          .arrow_background {
+              margin: calc(-11 * var(--story-page-vh)) 0 0 0;
+          }
+          .bottom {
+              height: calc(54 * var(--story-page-vh));
+          }
+      }
+  
+      /*END Cover page*/
+  
+      /* Slide styles */
+      .story-wrapper{
+          display: flex;
+          flex-direction: column
+      }
+  
+      .video-credentials{
+          width: 100%;
+          background: #1c1c1c;
+          padding: 10px 30px;
+          position: relative;
+          height: 100%
+      }
+  
+      .home-border-top {
+          border-top: 3px solid #eb6e1f;
+      }
+  
+      .away-border-top {
+          border-top: 3px solid #002b5c;
+      }
+      .video-wrapper{
+          position: relative;
+          width: 100%;
+          height: 60%;
+      }
+  
+      amp-video{
+          height: 100%;
+          background:  #1c1c1c;
+      }
+  
+      .player-image{
+          border-radius: 100%;
+          text-align: center;
+          display: inline-block;
+          overflow: hidden;
+          display: inline-flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          vertical-align: middle;
+          justify-content: center;
+      }
+  
+      .player-image *{
+          vertical-align: middle;
+      }
+  
+      .player-image:first-child{
+          margin-right: 10px;
+      }
+  
+      .details-row{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #fff;
+          padding-bottom: 15px;
+      }
+  
+      .details-row .score{
+          text-align: right;
+      }
+  
+      .details-row .round{
+          color: #aaaaaa;
+          font-size: 14px;
+          margin-bottom: 3px;
+          font-family: 'proxima-nova-semibold', Helvetica, sans-serif;
+      }
+  
+      .details-row .team-score{
+          font-size: 18px;
+          font-family: 'proxima-nova-bold', Helvetica, sans-serif;
+          font-weight: 700;
+          line-height: 19px;
+          letter-spacing: 1.24px;
+          display: flex;
+          justify-content: flex-end;
+      }
+  
+      .details-row .team-score span{
+          color: #f5f702;
+          margin-left: 5px;
+      }
+  
+      .details-row .results-provider{
+          color: #aaaaaa;
+          font-size: 11px;
+          margin-top: 3px;
+      }
+  
+      .game-details{
+          padding-bottom: 15px;
+      }
+  
+      .game-details h1{
+          font-size: 29px;
+          font-weight: 400;
+          line-height: 27px;
+          margin-bottom: 10px;
+      }
+  
+      .game-details p {
+          color: #767676;
+          font-family: 'proxima-nova-semibold', Helvetica, sans-serif;
+          font-size: 15px;
+      }
+  
+      .action-block{
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: 20px;
+          padding: 0 20px;
+      }
+  
+      .action-block .call-to_action, .action-block .sponsor-wrap{
+          text-align: center;
+      }
+  
+      .action-block .sponsor_block{
+          text-align: right;
+      }
+  
+      .sponsor-wrap{
+          display: inline-block;
+      }
+  
+      .action-block .call_to_action{
+          flex-basis: 50%;
+          text-align: center;
+      }
+  
+      .action-block .logo{
+          flex-basis: 20%;
+      }
+  
+      .action-block .sponsor_block{
+          flex-basis: 30%;
+      }
+      .action-block a{
+          color: #fff;
+          text-decoration: none;
+      }
+  
+      .action-block .sponsor_block p{
+          font-size: 12px;
+      }
+  
+      .action-block .sponsor_block amp-img{
+          margin-top: 7px;
+      }
+  
+      .call_to_action p{
+          font-weight: 900;
+          font-family: 'proxima-nova-bold', Helvetica, sans-serif;
+      }
+  
+      .sponsor_block{
+          color: #767676;
+      }
+  
+      .sponsor_block p:first-child{
+          font-weight: 700;
+          font-size: 13px;
+      }
+  
+      .sponsor_block p:last-child{
+          font-size: 13px;
+      }
+  
+      .minute_logo{
+          max-width: 35px;
+      }
+      @media screen and ( max-height : 800px ) and (min-width:700px) and (max-width: 1024px) {
+          .video-wrapper{
+              height: 50%;
+          }
+      }
+      @media screen and ( max-width : 400px ) {
+          .video-wrapper{
+              height: 60%;
+          }
+          .game-details h1 {
+              font-size: 23px;
+          }
+      }
+      @media screen and ( max-width : 280px ) {
+          .video-wrapper{
+              height: 50%;
+          }
+      }
+  
+      @media screen and (max-width:1024px) and (min-width:780px) and (max-height:1400px) and (min-height:820px) {
+          amp-story:not([class$="story-desktop-one-panel"]) .footer {
+              padding: 0 30px;
+          }
+          amp-story:not([class$="story-desktop-one-panel"]) .team_credentials .city {
+              
+              font-size: 31px;height: 31px;
+          }
+          amp-story:not([class$="story-desktop-one-panel"]) .team_credentials .name {
+              font-size: 39px;
+          }
+          amp-story:not([class$="story-desktop-one-panel"]) .team_credentials .score {
+              font-size: 38px;
+          }
+          amp-story:not([class$="story-desktop-one-panel"]) .game-details h1 {
+              font-size: 33px;
+          }
+          amp-story:not([class$="story-desktop-one-panel"]) .game-details p {
+              font-size: 19px;
+          }
+          amp-story:not([class$="story-desktop-one-panel"]) .details-row .round {
+              font-size: 17px;
+          }
+          amp-story:not([class$="story-desktop-one-panel"]) .details-row .team-score {
+              font-size: 20px;
+              line-height: 21px;
+          }
+          amp-story:not([class$="story-desktop-one-panel"]) .details-row .results-provider {
+              font-size: 13px;
+          }
+          amp-story:not([class$="story-desktop-one-panel"]) .minute_logo {
+              max-width: 40px;
+          }
+          amp-story:not([class$="story-desktop-one-panel"]) .video-wrapper {
+              height: 60%;
+          }
+          amp-story:not([class$="story-desktop-one-panel"]) .top {
+              margin: 6% 0 0;
+          }
+          amp-story:not([class$="story-desktop-one-panel"]) .bottom {
+              bottom: 13%;
+              right: 30px;
+          }
+  
+          .bookend-match-container {
+              height: 140px;
+          }
+  
+          .bookend-arrow {
+              height: 140px;
+          }
+      }
+  
+      @media screen and (max-height: 660px) and (min-height: 530px) {
+          .video-wrapper {
+              height: 55%;
+          }
+      }
+  
+      @media screen and (max-height: 530px) {
+          .video-wrapper {
+              height: 50%;
+          }
+  
+          .details-row {
+              padding-bottom: 5px;
+          }
+      }
+      /*image half */
+  
+      .image-story-page-half {
+          position: relative;
+          margin-right: auto;
+          margin-left: auto;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: flex-end;
+          align-content: center;
+      }
+  
+      .image-story-wrapper-half {
+          position: absolute;
+          z-index: 50;
+          width: 100%;
+          height: 100%;
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 0%;
+      }
+  
+      .image-media-wrapper-half {
+          position: relative;
+          z-index: 50;
+          width: 100%;
+          height: 65%;
+      }
+  
+      .image-title-wrapper-half {
+          position: absolute;
+          left: 0%;
+          top: auto;
+          right: 0%;
+          bottom: 5%;
+          z-index: 60;
+          width: 100%;
+          height: 30%;
+          padding-top: 10px;
+          padding-right: 30px;
+          padding-bottom: 20px;
+          padding-left: 30px;
+      }
+  
+      .image-title-half {
+          z-index: 2;
+          height: 100%;
+          flex-direction: row;
+          align-items: center;
+          align-content: space-around;
+          align-self: flex-end;
+      }
+  
+      .image-heading-half {
+          margin-bottom: 20px;
+          align-self: auto;
+          color: #fff;
+          font-size: 28px;
+          line-height: 1.66;
+          font-weight: 400;
+          text-align: left;
+          letter-spacing: 0.1px;
+      }
+  
+      .image-subtitle-half {
+          margin-bottom: 10px;
+          font-size: 16px;
+          line-height: 1.6;
+          font-weight: 400;
+          text-align: left;
+          letter-spacing: 0px;
+      }
+  
+      /*image full*/
+  
+      .image-story-page-full {
+          position: relative;
+          margin-right: auto;
+          margin-left: auto;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: flex-end;
+          align-content: center;
+      }
+  
+      .image-story-wrapper-full {
+          position: absolute;
+          z-index: 50;
+          width: 100%;
+          height: 100%;
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 0%;
+      }
+  
+      .image-media-wrapper-full {
+          position: relative;
+          z-index: 50;
+          width: 100%;
+          height: 100%;
+      }
+  
+      .image-title-wrapper-full {
+          position: absolute;
+          left: 0%;
+          top: auto;
+          right: 0%;
+          bottom: 2%;
+          z-index: 60;
+          width: 100%;
+          padding: 20px;
+      }
+  
+      .image-title-full {
+          z-index: 2;
+          height: 100%;
+          flex-direction: row;
+          align-items: center;
+          align-content: space-around;
+          align-self: flex-end;
+      }
+  
+      .image-heading-full {
+          margin: 0px;
+          align-self: auto;
+          color: #fff;
+          font-size: 28px;
+          line-height: 1.55;
+          font-weight: 400;
+          text-align: left;
+      }
+  
+      .image-subtitle-full {
+          margin-bottom: 10px;
+          font-size: 16px;
+          line-height: 1.66;
+          font-weight: 400;
+          text-align: left;
+          letter-spacing: 0px;
+      }
+  
+      .gradient {
+          position: absolute;
+          z-index: 999;
+          background: rgb(0,0,0);
+          background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,255,0) 50%, rgba(0,0,0,0.5) 100%);
+      }
+        </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="i-amphtml-story-draggable-drawer-content"><div></div>
+
+    <div class="drawer-container">
+  
+      <div class="bookend-master-title-wrapper">
+        <div class="be-story-icon-container">
+          <amp-img class="be-story_icon i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2021/images/cover-story-icon.png" width="42" height="47" layout="fill" alt="" i-amphtml-layout="fill">
+          <img decoding="async" alt="" src="https://stories.mlb.com/assets/2021/images/cover-story-icon.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+        </div>
+  
+        <div class="bookend-master-title">More MLB Game Stories</div>
+      </div>
+  
+      
+        <div class="bookend-date-container">
+    Aug. 25, 2022
+  </div>
+  
+  
+    <a href="https://stories.mlb.com/live/662337.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#003087">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/NYY.png" layout="fill" alt="team logo" i-amphtml-layout="fill" style="--loader-delay-offset:0ms !important;">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/NYY.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">New York</div>
+              <div class="bookend-team-nickname">Yankees</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#c4ced4" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#006241">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#efb21e" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/OAK.png" layout="fill" i-amphtml-layout="fill" alt="" style="--loader-delay-offset:1ms !important;">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/OAK.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Oakland</div>
+              <div class="bookend-team-nickname">Athletics</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+    <a href="https://stories.mlb.com/live/663172.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#134a8e">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/TOR.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/TOR.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Toronto</div>
+              <div class="bookend-team-nickname">Blue Jays</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#d50032" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#0d2b56">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#bd3039" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/BOS.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/BOS.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Boston</div>
+              <div class="bookend-team-nickname">Red Sox</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+    <a href="https://stories.mlb.com/live/662433.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#33006f">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/COL.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/COL.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Colorado</div>
+              <div class="bookend-team-nickname">Rockies</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#c4ced4" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#002d72">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#ff5910" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/NYM.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/NYM.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">New York</div>
+              <div class="bookend-team-nickname">Mets</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+    <a href="https://stories.mlb.com/live/663459.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#333333">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/CWS.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/CWS.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Chicago</div>
+              <div class="bookend-team-nickname">White Sox</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#c4ced4" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#df4601">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#333333" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/BAL.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/BAL.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Baltimore</div>
+              <div class="bookend-team-nickname">Orioles</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+    <a href="https://stories.mlb.com/live/661604.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#c6011f">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/CIN.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/CIN.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Cincinnati</div>
+              <div class="bookend-team-nickname">Reds</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#333333" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#e81828">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#003278" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/PHI.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/PHI.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Philadelphia</div>
+              <div class="bookend-team-nickname">Phillies</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+    <a href="https://stories.mlb.com/live/662141.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#002b5c">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/CLE.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/CLE.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Cleveland</div>
+              <div class="bookend-team-nickname">Guardians</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#e31937" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#005c5c">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#0c2c56" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/SEA.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/SEA.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Seattle</div>
+              <div class="bookend-team-nickname">Mariners</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+    <a href="https://stories.mlb.com/live/663240.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#c41e3a">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/STL.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/STL.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">St. Louis</div>
+              <div class="bookend-team-nickname">Cardinals</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#001541" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#0e3386">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#cc3433" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/CHC.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/CHC.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Chicago</div>
+              <div class="bookend-team-nickname">Cubs</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+    <a href="https://stories.mlb.com/live/661856.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#862633">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/LAA.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/LAA.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Los Angeles</div>
+              <div class="bookend-team-nickname">Angels</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#003263" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#8fbce6">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#092c5c" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/TB.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/TB.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Tampa Bay</div>
+              <div class="bookend-team-nickname">Rays</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+  
+      
+        <div class="bookend-date-container">
+    Aug. 24, 2022
+  </div>
+  
+  
+    <a href="https://stories.mlb.com/live/662604.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#ffc72c">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/MIL.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/MIL.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Milwaukee</div>
+              <div class="bookend-team-nickname">Brewers</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#13294b" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#005a9c">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#ef3e42" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/LAD.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/LAD.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Los Angeles</div>
+              <div class="bookend-team-nickname">Dodgers</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+    <a href="https://stories.mlb.com/live/662799.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#002b5c">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/MIN.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/MIN.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Minnesota</div>
+              <div class="bookend-team-nickname">Twins</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#d31145" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#eb6e1f">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#002d62" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/HOU.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/HOU.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Houston</div>
+              <div class="bookend-team-nickname">Astros</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+    <a href="https://stories.mlb.com/live/662640.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#e3d4ad">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/ARI.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/ARI.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Arizona</div>
+              <div class="bookend-team-nickname">D-BACKS</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#a2132a" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#004687">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#c09a5b" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/KC.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/KC.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Kansas City</div>
+              <div class="bookend-team-nickname">Royals</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+    <a href="https://stories.mlb.com/live/663216.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#c41e3a">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/STL.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/STL.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">St. Louis</div>
+              <div class="bookend-team-nickname">Cardinals</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#001541" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#0e3386">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#cc3433" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/CHC.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/CHC.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Chicago</div>
+              <div class="bookend-team-nickname">Cubs</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+    <a href="https://stories.mlb.com/live/663173.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#134a8e">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/TOR.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/TOR.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Toronto</div>
+              <div class="bookend-team-nickname">Blue Jays</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#d50032" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#0d2b56">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#bd3039" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/BOS.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/BOS.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Boston</div>
+              <div class="bookend-team-nickname">Red Sox</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+    <a href="https://stories.mlb.com/live/661857.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#862633">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/LAA.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/LAA.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Los Angeles</div>
+              <div class="bookend-team-nickname">Angels</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#003263" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#8fbce6">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#092c5c" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/TB.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/TB.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Tampa Bay</div>
+              <div class="bookend-team-nickname">Rays</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  
+    <a href="https://stories.mlb.com/live/661605.html" style="color:black" i-amphtml-orig-tabindex="0" tabindex="0">
+      <div class="bookend-match-container">
+  
+        <div class="bookend-team-container" style="background-color:#c6011f">
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/CIN.png" layout="fill" alt="team logo" i-amphtml-layout="fill">
+              <img decoding="async" alt="team logo" src="https://stories.mlb.com/assets/2022/team-logos/CIN.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Cincinnati</div>
+              <div class="bookend-team-nickname">Reds</div>
+            </div>
+          </div>
+          <div class="bookend-right-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="158 80 28.86 318"><defs></defs><polygon fill="#333333" points="180 80 180 87 158 108 158 126.95 180 106 180 129 180 141 158 162 158 180.95 180 160 180 183 180 195 158 216 158 234.95 180 214 180 236 180 248 158 269 158 287.95 180 267 180 290 180 302 158 323 158 341.95 180 321 180 343 180 355 158 376 158 394.95 180 374 180 398 186.86 398 186.86 80 180 80"></polygon></svg>
+          </div>
+        </div>
+  
+        <div class="bookend-team-container" style="background-color:#e81828">
+          <div class="bookend-left-svg-container">
+            <svg class="bookend-arrow" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="159.86 60 29.14 318"><defs></defs><polygon fill="#003278" points="189 106.69 189 87.75 167 67.45 167 67 167 60 159.86 60 159.86 378 167.31 378 167 354 167 353.75 189 374.69 189 355.75 167.28 335.71 167 301 167 300.75 189 321.69 189 302.75 167.29 282.72 167 247 167 246.75 189 267.69 189 248.75 167.28 228.71 167 194 167 193.75 189 214.69 189 195.75 167.29 175.72 167 140 167 139.75 189 160.69 189 141.75 167.29 121.72 167 86 167 85.75 189 106.69"></polygon></svg>
+          </div>
+          <div class="book-team-inner-container">
+            <div class="book-team-image-container">
+              <amp-img class="bookend-image i-amphtml-element i-amphtml-layout-fill i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" src="https://stories.mlb.com/assets/2022/team-logos/PHI.png" layout="fill" i-amphtml-layout="fill" alt="">
+              <img decoding="async" alt="" src="https://stories.mlb.com/assets/2022/team-logos/PHI.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+            </div>
+            <div class="bookend-team-name-container">
+              <div class="bookend-team-name">Philadelphia</div>
+              <div class="bookend-team-nickname">Phillies</div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </a>
+  <!--    <div class="bookend-link-container">-->
+  <!--      <a class="bookend-link" href="https://www.mlb.com/game-stories">All Game Stories</a>-->
+  <!--    </div>-->
+    </div>
+  </div>
+</body>
+</html>

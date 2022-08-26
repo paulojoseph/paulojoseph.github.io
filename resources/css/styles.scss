@@ -3,7 +3,11 @@ $sections-color: #D3BB8C;
 $border-color: #695C44;
 
 body {
-    background-color: #FAFAFA;
+    background-color: $bg-color;
+  }
+
+  .bookend-arrow {
+    height: 120px;
   }
   
   .sections {
