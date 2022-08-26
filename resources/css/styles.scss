@@ -1,16 +1,20 @@
+$bg-color: #444;
+$sections-color: #D3BB8C;
+$border-color: #695C44;
+
 body {
     background-color: #FAFAFA;
   }
   
   .sections {
     display: flex;
-    border: 1px solid #695C44;
+    border: 1px solid $border-color;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
-    background-color: #D3BB8C;
-    color: #444444;
+    background-color: $sections-color;
+    color: $bg-color;
   }
   
   header {
