@@ -1,21 +1,22 @@
 body {
-  background-color: hwb(204 20% 20%);
+  background-color: #fff;
   font-family: "Galindo", cursive;
-}
-
-.bookend-arrow {
-  height: 120px;
 }
 
 .sections, footer {
   display: flex;
-  border: 3px solid #181E34;
+  border: 3px solid black;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: hsl(188deg, 54%, 80%);
-  color: #181E34;
+  color: white;
+  line-height: 1.5;
+}
+
+.sections {
+  background-color: #fff;
+  color: #1E1E24;
 }
 
 header {
@@ -31,7 +32,7 @@ header {
 h1 {
   font-size: 2rem;
   font-weight: 900;
-  color: #181E34;
+  color: #1E1E24;
   margin: auto 0;
 }
 
@@ -70,13 +71,13 @@ header ul li {
 nav a {
   padding: 0.5rem;
   font-weight: bold;
-  color: #181E34;
+  color: #1E1E24;
   border-radius: 15px;
 }
 
 nav a:hover {
-  background-color: hsl(188deg, 54%, 80%);
-  color: #181E34;
+  background-color: #1E1E24;
+  color: white;
   transition: 250ms;
   border-radius: 15px;
 }
@@ -88,6 +89,7 @@ nav a:hover {
   height: 12.5rem;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
+  row-gap: 1rem;
   justify-items: center;
   justify-content: space-between;
   align-items: center;
@@ -98,13 +100,29 @@ nav a:hover {
   grid-template: 1fr/repeat(5, 1fr);
 }
 
-.about-container .square-2, .about-container .square-3 {
-  grid-column: span 2;
+.about-container .square-2 {
+  grid-column: span 4;
+  background-color: #fff;
+  color: #0E9594;
 }
 
 /* PROJECTS */
 .projects-container {
   grid-template: 1fr/repeat(5, 1fr);
+}
+
+.project-1 {
+  background-color: #FF5154;
+}
+
+.skill-1 {
+  background-color: #0E9594;
+}
+
+.about-container .square-2 {
+  grid-column: span 4;
+  background-color: #fff;
+  color: #1E1E24;
 }
 
 /* SKILLS */
@@ -118,4 +136,8 @@ nav a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   border-top-left-radius: 5%;
+}
+
+footer {
+  background-color: #1E1E24;
 }/*# sourceMappingURL=styles.css.map */
