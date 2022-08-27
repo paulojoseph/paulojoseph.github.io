@@ -122,6 +122,7 @@ body {
   
   .containers {
     display: grid;
+    flex-wrap: wrap;
     margin: 0.5rem auto;
     width: 98%;
     height: 12.5rem;
@@ -190,4 +191,33 @@ body {
 
   footer {
     background-color: $footer-color;
+  }
+
+  @media only screen and (max-width : 414px) {
+
+    main {
+      width: 98%;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+    nav a {
+      font-size: 0.5rem;
+      padding: 0.2rem;
+    }
+
+    .containers {
+      // margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .sections {
+      min-height: 5rem;
+    }
+
+    footer {
+      position: relative;
+    }
   }

@@ -84,6 +84,7 @@ nav a:hover {
 
 .containers {
   display: grid;
+  flex-wrap: wrap;
   margin: 0.5rem auto;
   width: 98%;
   height: 12.5rem;
@@ -140,4 +141,27 @@ nav a:hover {
 
 footer {
   background-color: #1E1E24;
+}
+
+@media only screen and (max-width: 414px) {
+  main {
+    width: 98%;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  nav a {
+    font-size: 0.5rem;
+    padding: 0.2rem;
+  }
+  .containers {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sections {
+    min-height: 5rem;
+  }
+  footer {
+    position: relative;
+  }
 }/*# sourceMappingURL=styles.css.map */
