@@ -1,12 +1,30 @@
 // fav colors #DA304C;
 
-$bg-color: #fff; 
+:root {
+  --body-bg: #F7F9F7; 
+  --body-color: #1E1E24;
+  --sections-color: #F7F9F7;
+  --footer-bg: #1E1E24;
+}
+
+.dark-mode:root {
+  --body-bg: #1E1E24; 
+  --body-color: #F7F9F7;
+  --sections-color: #424651;
+  --footer-bg: black;
+}
+
+$bg-color: var(--body-bg); 
+$font-color: var(--body-color);
 $projects-color: #FF5154;
 $skills-color: #0E9594;
-$sections-color: #0E9594;
+$sections-color: var(--sections-color);
 $border-color: black;
-$font-color: white;
-$footer-color: #1E1E24;
+$footer-bg: var(--footer-bg);
+
+label {
+  color: $font-color;
+}
 
 // $border-color: #39FF14;
 // $sections-color: #30343F; Gunmetal
@@ -25,6 +43,7 @@ $footer-color: #1E1E24;
 body {
     // background-color: $bg-color;
     background-color: $bg-color;
+    color: $font-color;
     // font-family: 'DynaPuff', cursive;
     // font-family: 'IM Fell Double Pica SC', serif;
     // font-family: 'Uncial Antiqua', cursive;
@@ -45,13 +64,13 @@ body {
     height: 100%;
     justify-content: center;
     align-items: center;
-    color: $font-color;
+    // color: $font-color;
     line-height: 1.5;
   }
 
   .sections {
     background-color: $bg-color;
-    color: $footer-color;
+    color: $font-color;
   }
   
   header {
@@ -68,8 +87,8 @@ body {
     // font-family: 'Revalia', cursive;
     font-size: 2rem;
     font-weight: 900;
-    color: $footer-color;
     margin: auto 0;
+    color: $font-color;
   }
 
   h2 {
@@ -109,15 +128,16 @@ body {
   nav a {
     padding: 0.5rem;
     font-weight: bold;
-    color: $footer-color;
-    border-radius: 15px;
-  }
-
-  nav a:hover {
-    background-color: $footer-color;
     color: $font-color;
-    transition: 250ms;
     border-radius: 15px;
+
+    &:hover {
+      background-color: $font-color;
+      color: $bg-color;
+      transition: 250ms;
+      border-radius: 15px;
+    }
+
   }
   
   .containers {
@@ -143,11 +163,12 @@ body {
   .about-container .square-2 {
     grid-column: span 4;
     // border-top-left-radius: 5%;
-    background-color: $bg-color;
-    color: $sections-color
+    // background-color: $bg-color;
   }
 
-
+.sections {
+  background-color: $sections-color;
+}
   
   /* PROJECTS */
   
@@ -159,19 +180,25 @@ body {
   //   background-color: $bg-color;
   // }
 
+  .about-1, .project-1, .skill-1, footer, .sections {
+    border-color: $font-color;
+  }
+
   .project-1 {
     background-color: $projects-color;
+    color: #1E1E24;
   }
 
   .skill-1 {
     background-color: $skills-color;
+    color: #1E1E24;
   }
 
   .about-container .square-2 {
     grid-column: span 4;
     // border-top-left-radius: 5%;
-    background-color: $bg-color;
-    color: $footer-color
+    // background-color: $bg-color;
+    // color: $footer-color
   }
 
 
@@ -190,7 +217,12 @@ body {
   }
 
   footer {
-    background-color: $footer-color;
+    background-color: #1E1E24;
+
+    h2 {
+      color: #ECEBE4;
+    }
+
   }
 
   @media only screen and (max-width : 414px) {
