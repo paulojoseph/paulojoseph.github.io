@@ -1,5 +1,24 @@
+:root {
+  --body-bg: #F7F9F7;
+  --body-color: #1E1E24;
+  --sections-color: #F7F9F7;
+  --footer-bg: #1E1E24;
+}
+
+.dark-mode:root {
+  --body-bg: #1E1E24;
+  --body-color: #F7F9F7;
+  --sections-color: #424651;
+  --footer-bg: black;
+}
+
+label {
+  color: var(--body-color);
+}
+
 body {
-  background-color: #fff;
+  background-color: var(--body-bg);
+  color: var(--body-color);
   font-family: "Galindo", cursive;
 }
 
@@ -10,13 +29,12 @@ body {
   height: 100%;
   justify-content: center;
   align-items: center;
-  color: white;
   line-height: 1.5;
 }
 
 .sections {
-  background-color: #fff;
-  color: #1E1E24;
+  background-color: var(--body-bg);
+  color: var(--body-color);
 }
 
 header {
@@ -32,8 +50,8 @@ header {
 h1 {
   font-size: 2rem;
   font-weight: 900;
-  color: #1E1E24;
   margin: auto 0;
+  color: var(--body-color);
 }
 
 h2 {
@@ -71,13 +89,12 @@ header ul li {
 nav a {
   padding: 0.5rem;
   font-weight: bold;
-  color: #1E1E24;
+  color: var(--body-color);
   border-radius: 15px;
 }
-
 nav a:hover {
-  background-color: #1E1E24;
-  color: white;
+  background-color: var(--body-color);
+  color: var(--body-bg);
   transition: 250ms;
   border-radius: 15px;
 }
@@ -103,8 +120,10 @@ nav a:hover {
 
 .about-container .square-2 {
   grid-column: span 4;
-  background-color: #fff;
-  color: #0E9594;
+}
+
+.sections {
+  background-color: var(--sections-color);
 }
 
 /* PROJECTS */
@@ -112,18 +131,22 @@ nav a:hover {
   grid-template: 1fr/repeat(5, 1fr);
 }
 
+.about-1, .project-1, .skill-1, footer, .sections {
+  border-color: var(--body-color);
+}
+
 .project-1 {
   background-color: #FF5154;
+  color: #1E1E24;
 }
 
 .skill-1 {
   background-color: #0E9594;
+  color: #1E1E24;
 }
 
 .about-container .square-2 {
   grid-column: span 4;
-  background-color: #fff;
-  color: #1E1E24;
 }
 
 /* SKILLS */
@@ -141,6 +164,9 @@ nav a:hover {
 
 footer {
   background-color: #1E1E24;
+}
+footer h2 {
+  color: #ECEBE4;
 }
 
 @media only screen and (max-width: 414px) {
