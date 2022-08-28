@@ -1,22 +1,44 @@
+:root {
+  --body-bg: #F7F9F7;
+  --body-color: #1E1E24;
+  --sections-color: #F7F9F7;
+  --footer-bg: #1E1E24;
+  --border-color: #1E1E24;
+}
+
+.dark-mode:root {
+  --body-bg: #1E1E24;
+  --body-color: #fff;
+  --sections-color: #6c6c6c;
+  --footer-bg: black;
+  --border-color: #474747;
+}
+
+label {
+  color: var(--body-color);
+}
+
 body {
-  background-color: #fff;
+  background-color: var(--body-bg);
+  color: var(--body-color);
+  border-color: var(--border-color);
+  transition: ease-in-out 250ms;
   font-family: "Galindo", cursive;
 }
 
 .sections, footer {
   display: flex;
-  border: 3px solid black;
+  border: 3px solid var(--border-color);
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
-  color: white;
   line-height: 1.5;
 }
 
 .sections {
-  background-color: #fff;
-  color: #1E1E24;
+  background-color: var(--body-bg);
+  color: var(--body-color);
 }
 
 header {
@@ -32,8 +54,8 @@ header {
 h1 {
   font-size: 2rem;
   font-weight: 900;
-  color: #1E1E24;
   margin: auto 0;
+  color: var(--body-color);
 }
 
 h2 {
@@ -71,13 +93,12 @@ header ul li {
 nav a {
   padding: 0.5rem;
   font-weight: bold;
-  color: #1E1E24;
+  color: var(--body-color);
   border-radius: 15px;
 }
-
 nav a:hover {
-  background-color: #1E1E24;
-  color: white;
+  background-color: var(--body-color);
+  color: var(--body-bg);
   transition: 250ms;
   border-radius: 15px;
 }
@@ -103,8 +124,10 @@ nav a:hover {
 
 .about-container .square-2 {
   grid-column: span 4;
-  background-color: #fff;
-  color: #0E9594;
+}
+
+.sections {
+  background-color: var(--sections-color);
 }
 
 /* PROJECTS */
@@ -112,18 +135,22 @@ nav a:hover {
   grid-template: 1fr/repeat(5, 1fr);
 }
 
+.about-1, .project-1, .skill-1 {
+  border-color: var(--border-color);
+}
+
 .project-1 {
   background-color: #FF5154;
+  color: #1E1E24;
 }
 
 .skill-1 {
   background-color: #0E9594;
+  color: #1E1E24;
 }
 
 .about-container .square-2 {
   grid-column: span 4;
-  background-color: #fff;
-  color: #1E1E24;
 }
 
 /* SKILLS */
@@ -141,6 +168,12 @@ nav a:hover {
 
 footer {
   background-color: #1E1E24;
+  width: 98%;
+  height: 10rem;
+  margin: 0.5rem auto;
+}
+footer h2 {
+  color: #ECEBE4;
 }
 
 @media only screen and (max-width: 414px) {
