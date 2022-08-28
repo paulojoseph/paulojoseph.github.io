@@ -5,13 +5,16 @@
   --body-color: #1E1E24;
   --sections-color: #F7F9F7;
   --footer-bg: #1E1E24;
+  --border-color: #1E1E24;
 }
 
 .dark-mode:root {
   --body-bg: #1E1E24; 
-  --body-color: #F7F9F7;
-  --sections-color: #424651;
+  --body-color: #fff;
+  --sections-color: #6c6c6c;
+  // --sections-color: #424651;
   --footer-bg: black;
+  --border-color: #474747;
 }
 
 $bg-color: var(--body-bg); 
@@ -19,7 +22,7 @@ $font-color: var(--body-color);
 $projects-color: #FF5154;
 $skills-color: #0E9594;
 $sections-color: var(--sections-color);
-$border-color: black;
+$border-color: var(--border-color);
 $footer-bg: var(--footer-bg);
 
 label {
@@ -44,6 +47,8 @@ body {
     // background-color: $bg-color;
     background-color: $bg-color;
     color: $font-color;
+    border-color: $border-color;
+    transition: ease-in-out 250ms;
     // font-family: 'DynaPuff', cursive;
     // font-family: 'IM Fell Double Pica SC', serif;
     // font-family: 'Uncial Antiqua', cursive;
@@ -180,8 +185,8 @@ body {
   //   background-color: $bg-color;
   // }
 
-  .about-1, .project-1, .skill-1, footer, .sections {
-    border-color: $font-color;
+  .about-1, .project-1, .skill-1 {
+    border-color: $border-color;
   }
 
   .project-1 {
@@ -218,6 +223,9 @@ body {
 
   footer {
     background-color: #1E1E24;
+    width: 98%;
+    height: 10rem;
+    margin: 0.5rem auto;
 
     h2 {
       color: #ECEBE4;
