@@ -30,15 +30,15 @@ body {
   display: flex;
   border: 3px solid var(--border-color);
   width: 100%;
-  height: 100%;
+  height: 12.5rem;
   justify-content: center;
   align-items: center;
   line-height: 1.5;
 }
 
 .sections {
-  background-color: var(--body-bg);
   color: var(--body-color);
+  background-color: var(--sections-color);
 }
 
 header {
@@ -67,7 +67,7 @@ main {
   margin: auto 0;
 }
 
-body .logo {
+.logo {
   display: flex;
   align-items: center;
 }
@@ -90,6 +90,11 @@ header ul li {
   display: inline;
 }
 
+#menu {
+  display: none;
+  position: absolute;
+}
+
 nav a {
   padding: 0.5rem;
   font-weight: bold;
@@ -108,7 +113,7 @@ nav a:hover {
   flex-wrap: wrap;
   margin: 0.5rem auto;
   width: 98%;
-  height: 12.5rem;
+  min-height: 12.5rem;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   row-gap: 1rem;
@@ -124,10 +129,6 @@ nav a:hover {
 
 .about-container .square-2 {
   grid-column: span 4;
-}
-
-.sections {
-  background-color: var(--sections-color);
 }
 
 /* PROJECTS */
@@ -158,7 +159,7 @@ nav a:hover {
   grid-template: 1fr/repeat(5, 1fr);
 }
 
-.about-container .square-1 {
+.about-1 {
   background-image: url("../images/paulo.jpeg");
   background-position: top;
   background-repeat: no-repeat;
@@ -170,15 +171,39 @@ footer {
   background-color: #1E1E24;
   width: 98%;
   height: 10rem;
-  margin: 0.5rem auto;
+  margin: 0rem auto;
 }
 footer h2 {
   color: #ECEBE4;
 }
 
+@media only screen and (max-width: 642px) {
+  #menu {
+    display: inline;
+    position: relative;
+  }
+  .options {
+    display: none;
+    position: relative;
+  }
+}
 @media only screen and (max-width: 414px) {
+  html,
+body {
+    max-width: 414px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   main {
-    width: 98%;
+    margin: 0 auto;
+    max-width: 414px;
+    display: flex;
+    flex-direction: column;
+    max-width: 98%;
   }
   h1 {
     font-size: 1rem;
@@ -189,12 +214,50 @@ footer h2 {
   }
   .containers {
     display: flex;
-    flex-wrap: wrap;
+    flex: column wrap;
+    margin: 0 auto;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 0;
+  }
+  .about-container {
+    display: flex;
+    flex: row wrap;
+    height: auto;
+    justify-content: center;
+    justify-content: center;
+  }
+  .about-container .sections {
+    width: 46%;
+  }
+  .about-1 {
+    background-size: cover;
+    background-position: bottom;
+  }
+  .about-2 {
+    border-bottom-right-radius: 5%;
   }
   .sections {
-    min-height: 5rem;
+    margin: 0.25rem auto;
+    max-height: 98%;
+    height: 12.5rem;
+    max-width: 98%;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+  }
+  .sections p {
+    margin: 0.5rem 0.5rem;
+  }
+  .project-1, .skill-1 {
+    height: 50%;
+    margin-top: 1rem;
+  }
+  label {
+    color: var(--body-color);
+    font-size: small;
   }
   footer {
-    position: relative;
+    margin-top: 0.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
