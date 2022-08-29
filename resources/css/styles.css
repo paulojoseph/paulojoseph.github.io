@@ -38,7 +38,7 @@ body {
   z-index: 1;
 }
 .sections .skill-title {
-  background-color: hsl(300deg, 100%, 32%);
+  background-color: hsl(300deg, 80%, 32%);
 }
 .sections .tech-title {
   background-color: hsl(359deg, 100%, 66%);
@@ -64,23 +64,142 @@ body {
 }
 .sections .square-container {
   height: 100%;
+  width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  justify-items: baseline;
+  align-content: center;
   position: relative;
-  margin: 0 auto;
 }
-.sections .square-container .square-content {
+.sections .square-container .square-contents {
   display: flex;
-  font-size: 1rem;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-items: right;
+  margin: auto 0;
+  align-content: flex-end;
+  justify-content: center;
+}
+.sections .square-container .square-contents .square-content {
+  position: relative;
+  height: 1.6868125rem;
+  display: flex;
+  font-size: 0.8rem;
   color: var(--body-color);
-  border: 1.5px solid var(--border-color);
   padding: 0.25rem;
-  justify-self: center;
+  margin: auto 0;
+  text-align: center;
+  justify-items: center;
+}
+.sections .square-container .square-contents .square-content p {
+  text-align: center;
+  align-self: center;
+  text-decoration: underline;
+}
+.sections .square-container .square-bars {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-items: right;
+  margin: auto 0;
+  align-content: flex-end;
+  justify-content: center;
+}
+.sections .square-container .square-bars .square-bar {
+  position: relative;
+  height: 1.6868125rem;
+  display: flex;
+  font-size: 0.8rem;
+  color: var(--body-color);
+  padding: 0.25rem;
+  margin: auto 0;
+  text-align: center;
+  justify-items: center;
+}
+.sections .square-container .square-bars .square-bar p {
+  text-align: center;
+  align-self: center;
+  text-decoration: underline;
 }
 
+div.track, div.bar {
+  box-sizing: border-box;
+  position: relative;
+}
+
+div.progress {
+  width: 100px;
+  padding-left: 2px;
+  padding-right: 2px;
+  height: 21px;
+  border-radius: 5px;
+  border: solid 3px #4e4e4e;
+  background-color: #1e1e1e;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+div.track {
+  position: relative;
+  width: 100%;
+  height: 21px;
+  overflow: hidden;
+  -webkit-animation: prgBar 1.25s ease-in-out 0s forwards;
+  animation: prgBar 1.25s ease-in-out 0s forwards;
+}
+
+div.bar {
+  height: 15px;
+  width: 6px;
+  position: relative;
+  border-radius: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 100px;
+  top: 3px;
+  float: left;
+  clear: top;
+}
+
+.skill-bar {
+  background-color: hsl(300deg, 80%, 32%);
+  box-shadow: 0px 0px 5px hsl(300deg, 80%, 32%);
+}
+
+.tech-bar {
+  background-color: hsl(359deg, 100%, 66%);
+  box-shadow: 0px 0px 5px hsl(359deg, 100%, 66%);
+}
+
+@-webkit-keyframes prgBar {
+  0% {
+    width: 0%;
+  }
+  9.99% {
+    width: 0%;
+  }
+  10% {
+    width: 10%;
+  }
+  95% {
+    width: 100%;
+  }
+}
+@keyframes prgBar {
+  0% {
+    width: 0%;
+  }
+  9.99% {
+    width: 0%;
+  }
+  10% {
+    width: 10%;
+  }
+  95% {
+    width: 100%;
+  }
+}
 header {
   display: flex;
   color: white;
@@ -151,7 +270,7 @@ nav a:hover {
   border-radius: 15px;
 }
 nav a:hover.option-skill {
-  color: hsl(300deg, 100%, 32%);
+  color: hsl(300deg, 80%, 32%);
 }
 nav a:hover.option-tech {
   color: hsl(359deg, 100%, 66%);
@@ -201,11 +320,15 @@ nav a:hover.option-project {
 }
 
 .skill-1 {
-  background-color: hsl(300deg, 100%, 32%);
+  background-color: hsl(300deg, 80%, 32%);
+}
+
+.tech-skill-1 {
+  background-color: hsl(359deg, 100%, 66%);
 }
 
 .sections .skill-title {
-  background-color: hsl(300deg, 100%, 32%);
+  background-color: hsl(300deg, 80%, 32%);
 }
 
 .sections .tech-title {
@@ -214,10 +337,6 @@ nav a:hover.option-project {
 
 .sections .project-title {
   background-color: hsl(180deg, 100%, 32%);
-}
-
-.tech-skill-1 {
-  background-color: hsl(359deg, 100%, 66%);
 }
 
 .about-container .square-2 {
