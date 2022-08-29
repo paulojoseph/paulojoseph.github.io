@@ -19,8 +19,9 @@
 
 $bg-color: var(--body-bg); 
 $font-color: var(--body-color);
-$projects-color: #FF5154;
-$skills-color: #0E9594;
+$projects-color: hsl(180, 100%, 32%);
+$skills-color: hsl(300, 100%, 32%);
+$genskills-color: hsl(359, 100%, 66%);
 $sections-color: var(--sections-color);
 $border-color: var(--border-color);
 $footer-bg: var(--footer-bg);
@@ -133,6 +134,12 @@ body {
   #menu {
     display: none;
     position: absolute;
+    
+    &:hover {
+      background-color: $bg-color;
+      }
+    }
+
   }
 
   nav a {
@@ -147,7 +154,6 @@ body {
       transition: 250ms;
       border-radius: 15px;
     }
-
   }
   
   .containers {
@@ -178,7 +184,7 @@ body {
 
   /* PROJECTS */
   
-  .projects-container {
+  .projects-container, .skills-container, .gen-skills-container {
     grid-template: 1fr / repeat(5, 1fr);
   }
 
@@ -186,18 +192,21 @@ body {
   //   background-color: $bg-color;
   // }
 
-  .about-1, .project-1, .skill-1 {
+  .about-1, .project-1, .skill-1, .gen-skill-1 {
     border-color: $border-color;
+    color: #1E1E24;
   }
 
   .project-1 {
     background-color: $projects-color;
-    color: #1E1E24;
   }
 
   .skill-1 {
     background-color: $skills-color;
-    color: #1E1E24;
+  }
+
+  .gen-skill-1 {
+    background-color: $genskills-color;
   }
 
   .about-container .square-2 {
@@ -206,10 +215,6 @@ body {
 
 
   /* SKILLS */
-  
-  .skills-container {
-    grid-template: 1fr / repeat(5, 1fr);
-  }
   
   .about-1 {
     background-image: url('../images/paulo.jpeg');
@@ -223,7 +228,7 @@ body {
     background-color: #1E1E24;
     width: 98%;
     height: 10rem;
-    margin: 0rem auto;
+    margin: 1rem auto;
 
     h2 {
       color: #ECEBE4;
@@ -268,7 +273,8 @@ body {
     h1 {
       font-size: 1rem;
     }
-    nav a {
+
+    nav a img {
       font-size: 0.5rem;
       padding: 0.2rem;
     }
@@ -319,7 +325,7 @@ body {
       }
     }
 
-    .project-1, .skill-1 {
+    .project-1, .skill-1, .gen-skill-1 {
       height: 50%;
       margin-top: 1rem;
     }

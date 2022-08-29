@@ -132,22 +132,25 @@ nav a:hover {
 }
 
 /* PROJECTS */
-.projects-container {
+.projects-container, .skills-container, .gen-skills-container {
   grid-template: 1fr/repeat(5, 1fr);
 }
 
-.about-1, .project-1, .skill-1 {
+.about-1, .project-1, .skill-1, .gen-skill-1 {
   border-color: var(--border-color);
+  color: #1E1E24;
 }
 
 .project-1 {
-  background-color: #FF5154;
-  color: #1E1E24;
+  background-color: hsl(180deg, 100%, 32%);
 }
 
 .skill-1 {
-  background-color: #0E9594;
-  color: #1E1E24;
+  background-color: hsl(300deg, 100%, 32%);
+}
+
+.gen-skill-1 {
+  background-color: hsl(359deg, 100%, 66%);
 }
 
 .about-container .square-2 {
@@ -155,10 +158,6 @@ nav a:hover {
 }
 
 /* SKILLS */
-.skills-container {
-  grid-template: 1fr/repeat(5, 1fr);
-}
-
 .about-1 {
   background-image: url("../images/paulo.jpeg");
   background-position: top;
@@ -181,6 +180,9 @@ footer h2 {
   #menu {
     display: inline;
     position: relative;
+  }
+  #menu:hover {
+    background-color: var(--body-bg);
   }
   .options {
     display: none;
@@ -208,7 +210,7 @@ body {
   h1 {
     font-size: 1rem;
   }
-  nav a {
+  nav a img {
     font-size: 0.5rem;
     padding: 0.2rem;
   }
@@ -249,7 +251,7 @@ body {
   .sections p {
     margin: 0.5rem 0.5rem;
   }
-  .project-1, .skill-1 {
+  .project-1, .skill-1, .gen-skill-1 {
     height: 50%;
     margin-top: 1rem;
   }
