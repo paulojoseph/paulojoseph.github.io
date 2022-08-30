@@ -470,7 +470,7 @@ div.bar {
     }
 
     .containers {
-      // margin: auto;
+      margin-bottom: 0;
       display: flex;
       flex: column wrap;
       margin: 0 auto;
@@ -483,6 +483,7 @@ div.bar {
       flex: row wrap;
       height: auto;
       justify-content: center;
+      margin-bottom: 1rem;
 
       & .sections {
         width: 46%;
@@ -512,25 +513,21 @@ div.bar {
       justify-content: center;
       justify-self: center;
       text-align: center;
+      min-width: auto;
 
       & p {
         margin: 0.5rem 0.5rem;
       }
 
-      & .square-container {
+      & .square-contents {
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: last baseline;
-        justify-items: flex-start;
-        align-items: baseline;
+        min-width: 40%;
       }
 
     }
 
     .project-1, .skill-1, .tech-skill-1 {
       height: 5rem;
-      margin-top: 1rem;
     }
 
     label {

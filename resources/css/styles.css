@@ -412,6 +412,7 @@ body {
     padding: 0.2rem;
   }
   .containers {
+    margin-bottom: 0;
     display: flex;
     flex: column wrap;
     margin: 0 auto;
@@ -424,6 +425,7 @@ body {
     flex: row wrap;
     height: auto;
     justify-content: center;
+    margin-bottom: 1rem;
   }
   .about-container .sections {
     width: 46%;
@@ -448,21 +450,17 @@ body {
     justify-content: center;
     justify-self: center;
     text-align: center;
+    min-width: auto;
   }
   .sections p {
     margin: 0.5rem 0.5rem;
   }
-  .sections .square-container {
+  .sections .square-contents {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: last baseline;
-    justify-items: flex-start;
-    align-items: baseline;
+    min-width: 40%;
   }
   .project-1, .skill-1, .tech-skill-1 {
     height: 5rem;
-    margin-top: 1rem;
   }
   label {
     color: var(--body-color);
