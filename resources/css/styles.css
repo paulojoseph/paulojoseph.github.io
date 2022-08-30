@@ -76,7 +76,9 @@ body {
   flex-direction: column;
   border: 3px solid var(--border-color);
   min-width: 12.5rem;
+  width: 10rem;
   width: 100%;
+  min-width: 200px;
   height: 12.5rem;
   color: var(--body-color);
   background-color: var(--sections-color);
@@ -423,6 +425,7 @@ nav a:hover.option-project {
   border-color: var(--border-color);
   justify-content: center;
   color: #1E1E24;
+  height: 1rem;
 }
 
 .skill-1, .tech-1, .project-1 {
@@ -488,7 +491,6 @@ footer {
   background-color: #1E1E24;
   width: 98%;
   min-height: 6.75rem;
-  margin: 0 auto;
   flex-direction: column;
   border: 3px solid var(--border-color);
   justify-content: center;
@@ -550,10 +552,19 @@ body {
     padding: 0;
     margin: 0 0.5rem;
   }
+  .active, .collapsible-skills:hover {
+    background-color: hsl(359deg, 100%, 66%);
+  }
+  .active, .collapsible-techs:hover {
+    background-color: hsl(180deg, 100%, 33%);
+  }
+  .active, .collapsible-projects:hover {
+    background-color: hsl(269deg, 100%, 66%);
+  }
   .projects-container, .skills-container, .techs-container {
     display: flex;
     flex-direction: row;
-    min-height: 5rem;
+    min-height: 3rem;
     margin: 0.25rem auto;
   }
   .about-1, .project-1, .skill-1, .tech-1 {
@@ -567,6 +578,8 @@ body {
     border: 3px solid var(--border-color);
     justify-content: center;
     align-content: center;
+    height: 5rem;
+    margin: 0.75rem 0.5rem 0.25rem 0.5rem;
   }
   .skill-1 h2, .tech-1 h2, .project-1 h2 {
     display: flex;
@@ -583,7 +596,7 @@ body {
     flex: row wrap;
     height: auto;
     justify-content: center;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
   }
   .about-container .sections {
     width: 46%;
@@ -617,10 +630,6 @@ body {
     display: flex;
     min-width: 40%;
   }
-  .project-1, .skill-1, .tech-1 {
-    height: 6rem;
-    margin: 0.75rem 0.5rem 0.25rem 0.5rem;
-  }
   label {
     color: var(--body-color);
     font-size: small;
@@ -628,8 +637,8 @@ body {
   footer {
     display: flex;
     width: 98%;
-    height: 11rem;
-    margin-top: 1.5rem;
+    height: 5rem;
+    margin: 1.5rem 0;
   }
   footer h2 {
     margin: auto 0;
