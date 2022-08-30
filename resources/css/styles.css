@@ -4,6 +4,7 @@
   --sections-color: #F7F9F7;
   --footer-bg: #1E1E24;
   --border-color: #1E1E24;
+  --menu-icon: "../resources/images/menu.svg" ;
 }
 
 .dark-mode:root {
@@ -12,6 +13,7 @@
   --sections-color: #6c6c6c;
   --footer-bg: black;
   --border-color: #474747;
+  --menu-icon: "../resources/images/menu-dark.png" ;
 }
 
 label {
@@ -139,7 +141,7 @@ div.track, div.bar {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: white;
 }
 .projects-container ul > li {
@@ -147,7 +149,7 @@ div.track, div.bar {
 }
 .projects-container .button {
   width: auto;
-  margin: 1rem 0.75rem;
+  margin: 1rem 0;
   color: #fff;
   background-color: #1E1E24;
   transition: transform 300ms;
