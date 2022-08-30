@@ -20,7 +20,7 @@
 $bg-color: var(--body-bg); 
 $font-color: var(--body-color);
 $projects-color: hsl(180, 100%, 32%);
-$skills-color: hsl(300, 80%, 32%);
+$skills-color: hsl(269, 100%, 66%);
 $tech-color: hsl(359, 100%, 66%);
 $sections-color: var(--sections-color);
 $border-color: var(--border-color);
@@ -67,6 +67,7 @@ body {
     display: flex;
     flex-direction: column;
     border: 3px solid $border-color;
+    min-width: 12.5rem;
     width: 100%;
     // min-width: 200px;
     height: 12.5rem;
@@ -97,33 +98,29 @@ body {
       background-color: $bg-color;
       z-index: 0;
       border-bottom: 3px solid #1E1E24;
-
     }
 
     & .section-title h3 {
-      color: $font-color;
+      color: #1E1E24;
     }
 
     & .square-container {
       height: 100%;
       width: 100%;
       display: flex;
-      // flex-flow: row wrap;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
       align-content: center;
-      // justify-items: baseline;
       position: relative;
-      // margin: 0 auto;
 
       & .square-contents {
         display: flex;
+        position: relative;
         flex-direction: column;
         align-items: flex-end;
-        justify-items: right;
-        margin: auto 0;
         align-content: flex-end;
-        justify-content: center;
+        justify-content: space-evenly;
+        justify-items: center;
 
         & .square-content {
           position: relative;
@@ -131,15 +128,13 @@ body {
           display: flex;
           font-size: 0.8rem;
           color: $font-color;
-          // border: 1.5px solid $border-color;
           padding: 0.25rem;
           margin: auto 0;
-          // justify-self: center;
           text-align: center;
           justify-items: center;
   
           & p {
-            text-align: center;
+            text-align: right;
             align-self: center;
             text-decoration: underline;
           }
@@ -148,8 +143,10 @@ body {
 
       & .square-bars {
         display: flex;
+        position: relative;
+        min-width: 50%;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
         justify-items: right;
         margin: auto 0;
         align-content: flex-end;
@@ -353,7 +350,7 @@ div.bar {
   /* PROJECTS */
   
   .projects-container, .skills-container, .tech-skills-container {
-    grid-template: 1fr / repeat(5, 1fr);
+    grid-template: 1fr / 10.2405625rem repeat(3, 1fr);
   }
 
   // .projects-container  {
@@ -368,17 +365,17 @@ div.bar {
 
   .project-1 {
     background-color: $projects-color;
-    // max-width: 10.2405625rem;
+    min-width: 10.2405625rem;
   }
 
   .skill-1 {
     background-color: $skills-color;
-    // max-width: 10.2405625rem;
+    min-width: 10.2405625rem;
   }
   
   .tech-skill-1 {
     background-color: $tech-color;
-    // max-width: 10.2405625rem;
+    min-width: 10.2405625rem;
   }
 
   .sections .skill-title {
@@ -408,14 +405,16 @@ div.bar {
   }
 
   footer {
+    display: flex;
+    position: relative;
     background-color: #1E1E24;
     width: 98%;
     height: 10rem;
     margin: 0 auto;
-    display: flex;
+    // display: flex;
     flex-direction: column;
     border: 3px solid $border-color;
-    width: 100%;
+    // width: 100%;
     height: 12.5rem;
     justify-content: center;
     align-items: center;
@@ -450,6 +449,7 @@ div.bar {
       position: absolute;
       top: 0;
       left: 0;
+      background-color: $bg-color;
     }
 
     main {

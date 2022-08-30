@@ -30,6 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   border: 3px solid var(--border-color);
+  min-width: 12.5rem;
   width: 100%;
   height: 12.5rem;
   color: var(--body-color);
@@ -38,7 +39,7 @@ body {
   z-index: 1;
 }
 .sections .skill-title {
-  background-color: hsl(300deg, 80%, 32%);
+  background-color: hsl(269deg, 100%, 66%);
 }
 .sections .tech-title {
   background-color: hsl(359deg, 100%, 66%);
@@ -60,25 +61,25 @@ body {
   border-bottom: 3px solid #1E1E24;
 }
 .sections .section-title h3 {
-  color: var(--body-color);
+  color: #1E1E24;
 }
 .sections .square-container {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   align-content: center;
   position: relative;
 }
 .sections .square-container .square-contents {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: flex-end;
-  justify-items: right;
-  margin: auto 0;
   align-content: flex-end;
-  justify-content: center;
+  justify-content: space-evenly;
+  justify-items: center;
 }
 .sections .square-container .square-contents .square-content {
   position: relative;
@@ -92,14 +93,16 @@ body {
   justify-items: center;
 }
 .sections .square-container .square-contents .square-content p {
-  text-align: center;
+  text-align: right;
   align-self: center;
   text-decoration: underline;
 }
 .sections .square-container .square-bars {
   display: flex;
+  position: relative;
+  min-width: 50%;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-items: right;
   margin: auto 0;
   align-content: flex-end;
@@ -163,8 +166,8 @@ div.bar {
 }
 
 .skill-bar {
-  background-color: hsl(300deg, 80%, 32%);
-  box-shadow: 0px 0px 5px hsl(300deg, 80%, 32%);
+  background-color: hsl(269deg, 100%, 66%);
+  box-shadow: 0px 0px 5px hsl(269deg, 100%, 66%);
 }
 
 .tech-bar {
@@ -270,7 +273,7 @@ nav a:hover {
   border-radius: 15px;
 }
 nav a:hover.option-skill {
-  color: hsl(300deg, 80%, 32%);
+  color: hsl(269deg, 100%, 66%);
 }
 nav a:hover.option-tech {
   color: hsl(359deg, 100%, 66%);
@@ -306,7 +309,7 @@ nav a:hover.option-project {
 
 /* PROJECTS */
 .projects-container, .skills-container, .tech-skills-container {
-  grid-template: 1fr/repeat(5, 1fr);
+  grid-template: 1fr/10.2405625rem repeat(3, 1fr);
 }
 
 .about-1, .project-1, .skill-1, .tech-skill-1 {
@@ -317,18 +320,21 @@ nav a:hover.option-project {
 
 .project-1 {
   background-color: hsl(180deg, 100%, 32%);
+  min-width: 10.2405625rem;
 }
 
 .skill-1 {
-  background-color: hsl(300deg, 80%, 32%);
+  background-color: hsl(269deg, 100%, 66%);
+  min-width: 10.2405625rem;
 }
 
 .tech-skill-1 {
   background-color: hsl(359deg, 100%, 66%);
+  min-width: 10.2405625rem;
 }
 
 .sections .skill-title {
-  background-color: hsl(300deg, 80%, 32%);
+  background-color: hsl(269deg, 100%, 66%);
 }
 
 .sections .tech-title {
@@ -353,14 +359,14 @@ nav a:hover.option-project {
 }
 
 footer {
+  display: flex;
+  position: relative;
   background-color: #1E1E24;
   width: 98%;
   height: 10rem;
   margin: 0 auto;
-  display: flex;
   flex-direction: column;
   border: 3px solid var(--border-color);
-  width: 100%;
   height: 12.5rem;
   justify-content: center;
   align-items: center;
@@ -389,6 +395,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    background-color: var(--body-bg);
   }
   main {
     margin: 0 auto;
