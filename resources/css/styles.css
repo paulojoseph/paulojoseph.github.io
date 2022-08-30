@@ -137,6 +137,7 @@ div.track, div.bar {
 }
 .projects-container .buttons-container {
   display: flex;
+  flex-direction: row;
   width: 100%;
   justify-content: center;
   background-color: white;
@@ -145,17 +146,25 @@ div.track, div.bar {
   display: inline-block;
 }
 .projects-container .button {
-  background-color: var(--body-color);
-  padding: 0.5rem;
-  margin: 1rem 0.5rem;
+  width: auto;
+  margin: 1rem 0.75rem;
+  color: #fff;
+  background-color: #1E1E24;
+  transition: transform 300ms;
+  transform-origin: bottom center;
 }
-.projects-container .button a {
-  color: var(--body-bg);
-  width: 100%;
-}
-.projects-container .button a:hover {
+.projects-container .button:hover {
   background-color: #a552ff;
   color: var(--body-color);
+  transform: translateY(-2px);
+}
+.projects-container .button:hover a {
+  color: #1E1E24;
+}
+.projects-container .button a {
+  display: inline-block;
+  color: #F7F9F7;
+  padding: 0.5rem;
 }
 
 .project-image-1 {

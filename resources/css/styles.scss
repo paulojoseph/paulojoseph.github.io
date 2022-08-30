@@ -191,6 +191,7 @@ body {
 
   & .buttons-container {
     display: flex;
+    flex-direction: row;
     width: 100%;
     justify-content: center;
     background-color: white;
@@ -201,19 +202,29 @@ body {
   }
 
   & .button {
-    background-color: $font-color;
-    padding: 0.5rem;
-    margin: 1rem 0.5rem;
+    width: auto;
+    margin: 1rem 0.75rem;
+    color: #fff;
+    background-color: #1E1E24;
+    transition: transform 300ms;
+    transform-origin: bottom center;
+    
+    &:hover {
+      background-color: $projects-color;
+      color: $font-color;
+      // transform: scale(1.1);
+      transform: translateY(-2px);
 
-    & a {
-      color: $bg-color;
-      width: 100%;
-
-      &:hover {
-        background-color: $projects-color;
-        color: $font-color;
+      & a {
+        color: #1E1E24;
       }
 
+    }
+
+    & a {
+      display: inline-block;
+      color: #F7F9F7;
+      padding: 0.5rem;
     }
 
   }
