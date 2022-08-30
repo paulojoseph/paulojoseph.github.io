@@ -3,7 +3,7 @@
 :root {
   --body-bg: #F7F9F7; 
   --body-color: #1E1E24;
-  --sections-color: #F7F9F7;
+  --sections-color: #fff;
   --footer-bg: #1E1E24;
   --border-color: #1E1E24;
   --menu-icon : '../resources/images/menu.svg'
@@ -12,8 +12,8 @@
 .dark-mode:root {
   --body-bg: #1E1E24; 
   --body-color: #fff;
+  --sections-color:  ;
   --sections-color: #6c6c6c;
-  // --sections-color: #424651;
   --footer-bg: black;
   --border-color: #474747;
   --menu-icon : '../resources/images/menu-dark.png'
@@ -48,7 +48,9 @@ label {
 // $sections-color: hsl(188, 54%, 80%) ;
 // $border-color: #62676A;
 // $font-color: #181E34;
-
+html {
+  background-color: $bg-color;
+}
 body {
     // background-color: $bg-color;
     background-color: $bg-color;
@@ -697,6 +699,7 @@ div.bar {
       height: 100%;
       margin: auto 0;
       border-bottom-right-radius: 5%;
+      background-color: $sections-color;
     }
 
     .sections {
@@ -730,8 +733,8 @@ div.bar {
     footer {
       display: flex;
       width: 98%;
-      height: 5rem;
-      margin: 1.5rem 0;
+      height: 6rem;
+      margin: 1.5rem 0 0 0;
       // align-self: flex-end;
       // justify-self: end;
 

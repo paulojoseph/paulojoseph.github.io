@@ -2,7 +2,7 @@
 :root {
   --body-bg: #F7F9F7;
   --body-color: #1E1E24;
-  --sections-color: #F7F9F7;
+  --sections-color: #fff;
   --footer-bg: #1E1E24;
   --border-color: #1E1E24;
   --menu-icon: "../resources/images/menu.svg" ;
@@ -11,6 +11,7 @@
 .dark-mode:root {
   --body-bg: #1E1E24;
   --body-color: #fff;
+  --sections-color: ;
   --sections-color: #6c6c6c;
   --footer-bg: black;
   --border-color: #474747;
@@ -19,6 +20,10 @@
 
 label {
   color: var(--body-color);
+}
+
+html {
+  background-color: var(--body-bg);
 }
 
 body {
@@ -610,6 +615,7 @@ body {
     height: 100%;
     margin: auto 0;
     border-bottom-right-radius: 5%;
+    background-color: var(--sections-color);
   }
   .sections {
     display: flex;
@@ -637,8 +643,8 @@ body {
   footer {
     display: flex;
     width: 98%;
-    height: 5rem;
-    margin: 1.5rem 0;
+    height: 6rem;
+    margin: 1.5rem 0 0 0;
   }
   footer h2 {
     margin: auto 0;
