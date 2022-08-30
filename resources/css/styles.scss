@@ -19,9 +19,12 @@
 
 $bg-color: var(--body-bg); 
 $font-color: var(--body-color);
-$projects-color: hsl(180, 100%, 32%);
-$skills-color: hsl(269, 100%, 66%);
-$tech-color: hsl(359, 100%, 66%);
+$projects-color: #a552ff;
+$skills-color: #ff5254;
+$tech-color: #00a3a3;
+// $projects-color: #a552ff;
+// $skills-color: #00a3a3;
+// $tech-color: #ff5254;
 $sections-color: var(--sections-color);
 $border-color: var(--border-color);
 $footer-bg: var(--footer-bg);
@@ -177,6 +180,58 @@ body {
     box-sizing: border-box;
     position: relative;
 }
+
+.projects-container {
+
+  & .square-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  & .buttons-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+  }
+
+  & ul > li {
+    display: inline-block;
+  }
+
+  & .button {
+    background-color: $font-color;
+    padding: 0.5rem;
+    margin: 1rem 0.5rem;
+
+    & a {
+      color: $bg-color;
+      width: 100%;
+
+      &:hover {
+        background-color: $projects-color;
+        color: $font-color;
+      }
+
+    }
+
+  }
+}
+
+.project-image-1 {
+  background-image: url(../images/sigma.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.project-image-2 {
+  background-image: url(../images/re-conecta.PNG);
+  background-size: cover;
+}
+.project-image-3 {
+  background-image: url(../images/football-club.PNG);
+  background-size: cover;
+}
  
 div.progress {
     width: 100px;
@@ -221,6 +276,10 @@ div.bar {
 .tech-bar {
   background-color: $tech-color;
   box-shadow: 0px 0px 5px $tech-color;
+}
+.project-bar {
+  background-color: $projects-color;
+  box-shadow: 0px 0px 5px $projects-color;
 }
  
 @-webkit-keyframes prgBar {

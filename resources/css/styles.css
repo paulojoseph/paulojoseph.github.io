@@ -39,13 +39,13 @@ body {
   z-index: 1;
 }
 .sections .skill-title {
-  background-color: hsl(269deg, 100%, 66%);
+  background-color: #ff5254;
 }
 .sections .tech-title {
-  background-color: hsl(359deg, 100%, 66%);
+  background-color: #00a3a3;
 }
 .sections .project-title {
-  background-color: hsl(180deg, 100%, 32%);
+  background-color: #a552ff;
 }
 .sections .section-title {
   display: flex;
@@ -130,6 +130,50 @@ div.track, div.bar {
   position: relative;
 }
 
+.projects-container .square-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.projects-container .buttons-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: white;
+}
+.projects-container ul > li {
+  display: inline-block;
+}
+.projects-container .button {
+  background-color: var(--body-color);
+  padding: 0.5rem;
+  margin: 1rem 0.5rem;
+}
+.projects-container .button a {
+  color: var(--body-bg);
+  width: 100%;
+}
+.projects-container .button a:hover {
+  background-color: #a552ff;
+  color: var(--body-color);
+}
+
+.project-image-1 {
+  background-image: url(../images/sigma.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-image-2 {
+  background-image: url(../images/re-conecta.PNG);
+  background-size: cover;
+}
+
+.project-image-3 {
+  background-image: url(../images/football-club.PNG);
+  background-size: cover;
+}
+
 div.progress {
   width: 100px;
   padding-left: 2px;
@@ -166,13 +210,18 @@ div.bar {
 }
 
 .skill-bar {
-  background-color: hsl(269deg, 100%, 66%);
-  box-shadow: 0px 0px 5px hsl(269deg, 100%, 66%);
+  background-color: #ff5254;
+  box-shadow: 0px 0px 5px #ff5254;
 }
 
 .tech-bar {
-  background-color: hsl(359deg, 100%, 66%);
-  box-shadow: 0px 0px 5px hsl(359deg, 100%, 66%);
+  background-color: #00a3a3;
+  box-shadow: 0px 0px 5px #00a3a3;
+}
+
+.project-bar {
+  background-color: #a552ff;
+  box-shadow: 0px 0px 5px #a552ff;
 }
 
 @-webkit-keyframes prgBar {
@@ -273,13 +322,13 @@ nav a:hover {
   border-radius: 15px;
 }
 nav a:hover.option-skill {
-  color: hsl(269deg, 100%, 66%);
+  color: #ff5254;
 }
 nav a:hover.option-tech {
-  color: hsl(359deg, 100%, 66%);
+  color: #00a3a3;
 }
 nav a:hover.option-project {
-  color: hsl(180deg, 100%, 32%);
+  color: #a552ff;
 }
 
 .containers {
@@ -319,30 +368,30 @@ nav a:hover.option-project {
 }
 
 .project-1 {
-  background-color: hsl(180deg, 100%, 32%);
+  background-color: #a552ff;
   min-width: 10.2405625rem;
 }
 
 .skill-1 {
-  background-color: hsl(269deg, 100%, 66%);
+  background-color: #ff5254;
   min-width: 10.2405625rem;
 }
 
 .tech-skill-1 {
-  background-color: hsl(359deg, 100%, 66%);
+  background-color: #00a3a3;
   min-width: 10.2405625rem;
 }
 
 .sections .skill-title {
-  background-color: hsl(269deg, 100%, 66%);
+  background-color: #ff5254;
 }
 
 .sections .tech-title {
-  background-color: hsl(359deg, 100%, 66%);
+  background-color: #00a3a3;
 }
 
 .sections .project-title {
-  background-color: hsl(180deg, 100%, 32%);
+  background-color: #a552ff;
 }
 
 .about-container .square-2 {
