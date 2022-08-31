@@ -6,7 +6,7 @@
   --sections-color: #fff;
   --footer-bg: #1E1E24;
   --border-color: #1E1E24;
-  --menu-icon : '../resources/images/menu.svg'
+  --menu-icon : '../resources/assets/icons/menu-dark.png'
 }
 
 .dark-mode:root {
@@ -16,7 +16,7 @@
   --sections-color: #6c6c6c;
   --footer-bg: black;
   --border-color: #474747;
-  --menu-icon : '../resources/images/menu-dark.png'
+  --menu-icon : '../resources/assets/icons/menu-dark.png'
 }
 
 $bg-color: var(--body-bg); 
@@ -96,16 +96,24 @@ body {
     // position: relative;
     // top: 0.5rem;
     align-self: center;
-    content: '\002B';
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+    content: url('../assets/icons/arrow-up-32.png');
     font-size: 1.5rem;
     color: #1E1E24;
     font-weight: bold;
     float: right;
-    padding: 0.75rem;
+    transition: all 0.35s;
+    margin-right: 1rem;
+    // padding: 0.75rem;
   }
   
   .active:after {
-    content: "\2212";
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    content: url('../assets/icons/arrow-up-32.png');
   }
   
   .content {
@@ -666,7 +674,7 @@ div.bar {
     
     & h2 {
       display: flex;
-      width: auto;
+      width: 70%;
       height: auto;
       padding: 0.5rem;
       margin: auto 0;
