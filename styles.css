@@ -87,6 +87,7 @@ display: none;
 }
 
 .bar {
+  width: 4rem;
   z-index: 10000;
 }
 
@@ -745,7 +746,7 @@ input.newsletter {
 .hamburger {
 	position: relative;
 	display: block;
-	width: 35px;
+	width: 48px;
 	cursor: pointer;
 	appearance: none;
 	background: none;
@@ -756,10 +757,10 @@ input.newsletter {
 .hamburger .bar, .hamburger:after, .hamburger:before {
 	content: '';
 	display: block;
-	width: 100%;
+	width: 36px;
 	height: 5px;
 	background-color: #FFF;
-	margin: 6px 0px;
+	margin: 8px 0px;
 	transition: 0.4s;
 }
 
@@ -1364,7 +1365,7 @@ header {
     display: flex;
     position: fixed;
     align-items: center;
-    height: 10vh;
+    height: 128px;
     top: 0;
     /* background-color: var(--color-1); */
   }
@@ -1535,6 +1536,7 @@ header {
   }
   
   .nav-menu-mobile {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
   }

@@ -159,6 +159,7 @@ section.hero {
   }
 
   .hero-text h2 {
+    margin-top: 10rem;
     font-size: 2rem;
   }
 }
