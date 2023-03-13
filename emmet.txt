@@ -1,1 +1,0 @@
-main>header>div.logo>img+h1^nav>ul>(li>a.links)*4^^^^section.about-container>div.about*5^section.projects-container>div.projects*5^skills-container>div.skills*5^footer.containers
