@@ -87,8 +87,12 @@ section.hero {
   align-items: center;
   justify-content: center;
   padding-top: 1rem;
-  /* margin: auto; */
-  width: 100%;
+  margin: auto;
+  width: 95%;
+}
+
+img.observatorio-image {
+  width: 60%;
 }
 
 .dropdown-content p {
