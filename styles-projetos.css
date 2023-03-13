@@ -79,15 +79,16 @@ section.hero {
   padding: 10px;
   display: none;
   /* margin: auto; */
-  width: 85%;
+  width: 95%;
 }
 
 .dropdown-content img{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  /* width: 100%; */
+  padding-top: 1rem;
+  /* margin: auto; */
+  width: 100%;
 }
 
 .dropdown-content p {
@@ -164,7 +165,7 @@ section.hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  /* margin: auto; */
   /* width: 100%; */
 }
 
