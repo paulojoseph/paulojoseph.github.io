@@ -1,236 +1,508 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme-color" content="#00213f">
-  <meta name="viewport" content="initial-scale=1.0, width=device-width">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type='text/css' href="./resources/css/reset.css">
+  <link rel="stylesheet" type='text/css' href="./resources/css/styles.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="resources/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="resources/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="resources/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="resources/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="resources/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="resources/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="resources/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="resources/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="resources/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="resources/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="resources/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="resources/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="resources/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="./assets/optimized/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./assets/optimized/favicon.ico" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/9fe7959959.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-  
-  <title>Labportos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=DynaPuff:wght@400;500;600;700&family=Galindo&family=Goldman:wght@400;700&family=IM+Fell+Double+Pica+SC&family=Krona+One&family=Metal+Mania&family=New+Rocker&family=Qahiri&family=Revalia&family=Righteous&family=Rock+Salt&family=Shojumaru&family=Uncial+Antiqua&family=Zen+Dots&display=swap" rel="stylesheet">
+  <title>Paulo Marques's Portfolio</title>
 </head>
 <body>
   <main>
-
-    <!-- HEADER -->
     <header>
-      <div class="wrapper header-wrapper">
-        <div class="header-top">
-          <div class="header-top-left">
-            <div class="logo-container">
-              <a href="">
-                <img src="./assets/optimized/logo-branco.png" height="64" alt="">
-              </a>
+      <div class="logo">
+        <!-- <img src="./resources/assets/icons/logo-pj.svg" alt="Paulo Marques logo"> -->
+        <h1>Paulo Marques's Portfolio</h1>
+      </div>
+      <label for="switch"><input type="checkbox" id="switch">Dark Mode</label>
+      <nav>
+        <ul>
+          <li><a class="hover-nav options" href="./index.html">About</a></li>
+          <li><a class="hover-nav options option-skill" href="#">Skills</a></li>
+          <li><a class="hover-nav options option-tech" href="#">Tech</a></li>
+          <li><a class="hover-nav options option-project" href="#">Projects</a></li>
+          <li><a class="hover-nav options" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#" id="menu"><img src="resources/assets/icons/menu-light.png" alt=""></a>
+    </header>
+    <section class="about-container containers">
+      <div class="sections about square-1 about-1">
+      </div>
+      <div class="sections about square-2 about-2">
+        <p>Hi there! I'm Paulo Marques, a front-end developer.</p>
+      </div>
+
+    </section>
+
+    <section class="skills-container containers">
+      <div class="skill-1 collapsible collapsible-skills">
+        <h2>Skills</h2>
+      </div>
+      <div class="content">
+        <div class="sections skills square-2 skill-2">
+          <div class="section-title skill-title"><h3>Scripting Languages</h3></div>
+          <div class="square-container">
+            <div class="square-contents skills">
+              <div class="square-content"><p>HTML/CSS</p></div>
+              <div class="square-content"><p>Javascript</p></div>
+              <div class="square-content"><p>Python</p></div>
+              <div class="square-content"><p>Java</p></div>
+            </div>
+            <div class="square-bars">
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+              </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+              </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+              </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+              </div>
+              </div>
             </div>
           </div>
-          <div class="header-top-right">
-            <a href="">
-              <img src="./assets/optimized/logo-ufma-new.png" height="64" alt="">
-            </a>
-          </div>
-          <button class="hamburger">
-            <div class="bar"></div>
-          </button>
         </div>
-        <div class="header-bottom">
-          <nav>
-            <ul class="nav-menu">
-              <li><a href="" class="active"><h3>Home</h3><p>Página Inicial</p></a></li>
-              <li><a href="./institucional.html"><h3>Institucional</h3><p>Sobre Nós</p></a></li>
-              <li><a href="./projetos.html"><h3>Projetos</h3><p>Nossa Atuação</p></a></li>
-              <li><a href="./publicacoes.html"><h3>Publicações</h3><p>Nossas Publicações</p></a></li>
-              <li><a href="./newsletter.html"><h3>Newsletter</h3><p>Cadastre-se</p></a></li>
-              <li><a href="./contato.html"><h3>Contato</h3><p>Fale Conosco</p></a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <nav class="mobile-nav">
-      <ul class="nav-menu-mobile">
-        <li><a href="" class="active"><h3>Home</h3><p>Página Inicial</p></a></li>
-        <li><a href="./institucional.html"><h3>Institucional</h3><p>Sobre Nós</p></a></li>
-        <li><a href="./projetos.html"><h3>Projetos</h3><p>Nossa Atuação</p></a></li>
-        <li><a href="./publicacoes.html"><h3>Publicações</h3><p>Nossas Publicações</p></a></li>
-        <li><a href="./newsletter.html"><h3>Newsletter</h3><p>Cadastre-se</p></a></li>
-        <li><a href="./contato.html"><h3>Contato</h3><p>Fale Conosco</p></a></li>
-      </ul>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-title">
-        <p>O <strong>LabPortos</strong> é um grupo de pesquisa do</p>
-        <h2>Setor Portuário</h2>
-        <!-- <h2>Nossa missão é conectar o setor portuário com a academia e a sociedade</h2> -->
-        <!-- <button>QUOTE?</button> -->
-      </div>
-    </section>
-
-    <section class="elevated-menu">
-      <div class="wrapper">
-        <ul class="elevated-menu-items">
-          <li>
-            <a href="" class="elevated-card active" data-target="#section-two" data-content="#section-two">
-              <div class="elevated-card-icon">
-                <i class="fa-solid fa-ship"></i>
+  
+        <div class="sections skills square-3 skill-3">
+          <div class="section-title skill-title"><h3>Frameworks/Libs</h3></div>
+          <div class="square-container">
+            <div class="square-contents skills">
+              <div class="square-content"><p>Django</p></div>
+              <div class="square-content"><p>Node.js</p></div>
+              <div class="square-content"><p>React</p></div>
+            </div>
+            <div class="square-bars">
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+               </div>
               </div>
-              <div class="elevated-card-info">
-                <h4>Gestão Portuária</h4>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+               </div>
               </div>
-            </a>
-          </li>
-          <li>
-            <a href="" class="elevated-card" data-target="#section-two" data-content="#section-two">
-              <div class="elevated-card-icon">
-                <i class="fa-solid fa-ship"></i>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                  </div>
+               </div>
               </div>
-              <div class="elevated-card-info">
-                <h4>Logística Portuária</h4>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="" class="elevated-card" data-target="#section-two" data-content="#section-two">
-              <div class="elevated-card-icon">
-                <i class="fa-solid fa-ship"></i>
-              </div>
-              <div class="elevated-card-info">
-                <h4>Transporte Marítimo</h4>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="" class="elevated-card" data-target="#section-two" data-content="#section-two">
-              <div class="elevated-card-icon">
-                <i class="fa-solid fa-ship"></i>
-              </div>
-              <div class="elevated-card-info">
-                <h4>Competitividade e Estratégia Portuária</h4>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="" class="elevated-card" data-target="#section-two" data-content="#section-two">
-              <div class="elevated-card-icon">
-                <i class="fa-solid fa-ship"></i>
-              </div>
-              <div class="elevated-card-info">
-                <h4>Inteligência de Mercado Portuário e Marítimo</h4>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="two" id="section-two">
-      <div class="wrapper section-two-wrapper">
-        <div class="section-title">
-          <h2>
-            Conteúdo da Gestão Portuária:
-          </h2>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="three">
-      <div class="wrapper section-three-wrapper">
-        <div class="section-title white">
-          <h2>A nossa <strong>missão</strong> é conectar o setor portuário com a academia e a sociedade.</h2>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="noticias">
-      <div class="wrapper noticias-wrapper">
-        <div class="section-title">
-          <h2>Notícias</h2>
-        </div>
-        <div class="noticias-cards">
-          <div class="noticias-card">
-            <h3>Notícia 1</h3>
-          </div>
-          <div class="noticias-card">
-            <h3>Notícia 2</h3>
-          </div>
-          <div class="noticias-card">
-            <h3>Notícia 3</h3>
+            </div>
           </div>
         </div>
+        <div class="sections skills square-4 skill-4">
+          <div class="section-title skill-title"><h3>Design</h3></div>
+          <div class="square-container">
+            <div class="square-contents skills">
+              <div class="square-content"><p>UX/UI</p></div>
+              <div class="square-content"><p>Figma</p></div>
+              <div class="square-content"><p>Photoshop</p></div>
+              <div class="square-content"><p>Illustrator</p></div>
+            </div>
+            <div class="square-bars">
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+               </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+               </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+               </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sections skills square-4 skill-4">
+          <div class="section-title skill-title"><h3>Design</h3></div>
+          <div class="square-container">
+            <div class="square-contents skills">
+              <div class="square-content"><p>UX/UI</p></div>
+              <div class="square-content"><p>Figma</p></div>
+              <div class="square-content"><p>Photoshop</p></div>
+              <div class="square-content"><p>Illustrator</p></div>
+            </div>
+            <div class="square-bars">
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+               </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+               </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+               </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar skill-bar"></div>
+                      <div class="bar skill-bar"></div>
+                  </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
-    <section class="contato">
-      <div class="wrapper contato-wrapper">
-        <div class="section-title white">
-          <h2>Entre em Contato</h2>
+    <section class="techs-container containers">
+      <div class="tech-1 collapsible collapsible-techs">
+        <h2>Technologies</h2>
+      </div>
+      <div class="content">
+        <div class="sections techs square-2 tech-2">
+          <div class="section-title tech-title"><h3>Cloud Related</h3></div>
+          <div class="square-container">
+            <div class="square-contents tech">
+              <div class="square-content"><p>Google Cloud</p></div>
+              <div class="square-content"><p>SQL</p></div>
+            </div>
+            <div class="square-bars">
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                  </div>
+               </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                  </div>
+               </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="form-container">
-          <form>
-            <input type="text" id="name" name="name" placeholder="Nome" required>
-        
-            <input type="email" id="email" name="email" placeholder="E-mail" required>
-        
-            <textarea id="message" name="message" placeholder="Mensagem" rows="5" required></textarea>
-        
-            <input type="submit" value="ENVIAR">
-          </form>
+        <div class="sections techs square-3 tech-3">
+          <div class="section-title tech-title"><h3>Tools</h3></div>
+          <div class="square-container">
+            <div class="square-contents tech">
+              <div class="square-content"><p>Git/Github</p></div>
+              <div class="square-content"><p>Acessibility</p></div>
+              <div class="square-content"><p>CLI</p></div>
+            </div>
+            <div class="square-bars">
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                  </div>
+               </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                  </div>
+               </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                  </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sections techs square-4 tech-4">
+          <div class="section-title tech-title"><h3>Foreign Languages</h3></div>
+          <div class="square-container">
+            <div class="square-contents tech">
+              <div class="square-content"><p>English</p></div>
+              <div class="square-content"><p>Spanish</p></div>
+              <div class="square-content"><p>Deutsch</p></div>
+            </div>
+            <div class="square-bars">
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                  </div>
+               </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                  </div>
+               </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar tech-bar"></div>
+                  </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sections techs square-4 tech-4">
+          <div class="section-title tech-title"><h3>Foreign Languages</h3></div>
+          <div class="square-container">
+            <div class="square-contents tech">
+              <div class="square-content"><p>English</p></div>
+              <div class="square-content"><p>Spanish</p></div>
+              <div class="square-content"><p>Deutsch</p></div>
+            </div>
+            <div class="square-bars">
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                  </div>
+               </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                      <div class="bar tech-bar"></div>
+                  </div>
+               </div>
+              </div>
+              <div class="square-bar">
+                <div class="progress">
+                  <div class="track">
+                      <div class="bar tech-bar"></div>
+                  </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="projects-container containers">
+      <div class="project-1 collapsible collapsible-projects"> 
+        <h2>Projects</h2>
+      </div>
+      <div class="content">
+        <div class="sections projects square-2 project-2">
+          <div class="section-title project-title"><h3>SIGMA</h3></div>
+          <div class="square-container project-image project-image-1">
+            <div class="buttons-container">
+              <div class="button"><a href="#">Code</a></div>
+              <div class="button"><a href="#">Live</a></div>
+              <div class="button"><a href="#">About</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="sections projects square-3 project-3">
+          <div class="section-title project-title"><h3>reh-conecta</h3></div>
+          <div class="square-container project-image project-image-2">
+            <div class="buttons-container">
+              <div class="button"><a href="#">Code</a></div>
+              <div class="button"><a href="#">Live</a></div>
+              <div class="button"><a href="#">About</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="sections projects square-4 project-4">
+          <div class="section-title project-title"><h3>Football Club</h3></div>
+          <div class="square-container project-image project-image-3">
+            <div class="buttons-container">
+              <div class="button"><a href="#">Code</a></div>
+              <div class="button"><a href="#">Live</a></div>
+              <div class="button"><a href="#">About</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="sections projects square-4 project-4">
+          <div class="section-title project-title"><h3>Football Club</h3></div>
+          <div class="square-container project-image project-image-3">
+            <div class="buttons-container">
+              <div class="button"><a href="#">Code</a></div>
+              <div class="button"><a href="#">Live</a></div>
+              <div class="button"><a href="#">About</a></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
     <footer>
-      <div class="wrapper footer-wrapper">
-        <div class="footer-right">
-          <div class="footer-logo">
-            <img src="./assets/optimized/logo-branco.png" height="82" alt="">
-          </div>
-          <div class="footer-copy">
-            <p>2023 &#169; Todos os direitos reservados</p>
-          </div>
-          <div class="footer-right-info footer-info">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="footer-center">
-          <div class="footer-center-info footer-info">
-            <h3>Endereço:</h3>
-            <p>Av. dos Portugueses, 1966</p>
-            <p>Bacanga - CEP: 65080-805</p>
-            <p>São Luís - MA</p>
-          </div>
-          <div class="footer-center-info footer-info">
-            <h3>Atendimento</h3>
-            <p>Email: <a href="mailto:labportos@ufma.br">labportos@ufma.br</a> </p>
-          </div>
-        </div>
-        <div class="footer-left">
-          <div class="footer-newsletter">
-            <p>Inscreva-se em nossa newsletter!</p>
-          </div>
-          <div class="footer-form">
-            <form action="">
-              <input type="email" id="email2" name="email2" placeholder="e-mail">
-            </form>
-            <input type="submit" value="OK" class="newsletter">
-            </input>
-          </div>
-        </div>
-      </div>
+      <h2>Footer</h2>
     </footer>
   </main>
-  <script src="./script.js"></script>
+  
+  <script src="resources/js/script.js"></script>
+  
 </body>
 </html>
